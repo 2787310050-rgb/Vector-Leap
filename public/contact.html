@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>联系我们 | 向量跃迁</title>
+    <meta name="description" content="联系向量跃迁，预约 AI 产品商务沟通。">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/vector-leap-icon.png">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header"></header>
+    <main>
+      <section class="page-hero contact-hero">
+        <p class="eyebrow" data-i18n="nav.contact">联系我们</p>
+        <h1 data-i18n="contact.title">预约一次面向业务结果的 AI 沟通</h1>
+        <p data-i18n="contact.intro">告诉我们你的行业、产品和客户来源，我们会判断哪类 AI 产品最适合先落地。</p>
+      </section>
+      <section class="section contact-layout">
+        <form class="contact-form" data-contact-form>
+          <label><span data-i18n="contact.name">姓名</span><input name="name" required></label>
+          <label><span data-i18n="contact.company">公司</span><input name="company" required></label>
+          <label><span data-i18n="contact.contact">手机号/微信</span><input name="contact" required></label>
+          <label><span data-i18n="contact.email">邮箱</span><input name="email" type="email"></label>
+          <label><span data-i18n="contact.product">感兴趣产品</span>
+            <select name="product" required>
+              <option value="" data-i18n="contact.productPlaceholder">请选择</option>
+              <option value="AI客服" data-i18n="products.service.name">AI客服</option>
+              <option value="自媒体工具平台" data-i18n="products.media.name">自媒体工具平台</option>
+              <option value="抛光机AI演示系统" data-i18n="products.polish.name">抛光机AI演示系统</option>
+              <option value="综合咨询" data-i18n="contact.allProducts">综合咨询</option>
+            </select>
+          </label>
+          <label class="full"><span data-i18n="contact.message">需求描述</span><textarea name="message" rows="5" required></textarea></label>
+          <button class="button primary" type="submit" data-i18n="contact.submit">提交咨询</button>
+          <p class="form-status" data-form-status role="status"></p>
+        </form>
+        <aside class="contact-card">
+          <h2 data-i18n="contact.directTitle">商务对接</h2>
+          <p data-i18n="contact.directText">也可以通过微信、邮箱或电话联系我们。正式上线前请替换为你的真实联系方式。</p>
+          <div class="qr-placeholder">VX</div>
+          <p><strong data-i18n="contact.wechat">微信</strong><br>VectorLeap_AI</p>
+          <p><strong data-i18n="contact.mail">邮箱</strong><br><a href="mailto:business@example.com">business@example.com</a></p>
+          <p><strong data-i18n="contact.phone">电话</strong><br><a href="tel:+8613800000000">+86 138 0000 0000</a></p>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="/app.js"></script>
+  </body>
+</html>

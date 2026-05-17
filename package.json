@@ -1,0 +1,14 @@
+{
+  "name": "vector-leap-corporate-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bilingual corporate website for 向量跃迁.",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js",
+    "test": "node test-site.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
