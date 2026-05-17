@@ -455,6 +455,90 @@ a {
   gap: 22px;
 }
 
+.solution-stack {
+  display: grid;
+  gap: 22px;
+}
+
+.solution-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 26px;
+  padding: 30px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.solution-card h2 {
+  grid-column: 1 / -1;
+  margin: 8px 0 0;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+.solution-meta {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.problem-label {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.solution-points {
+  margin: 0;
+  padding-left: 18px;
+  color: #344054;
+}
+
+.solution-points li + li {
+  margin-top: 10px;
+}
+
+.linked-product {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.linked-product strong {
+  color: var(--muted);
+}
+
+.linked-product a {
+  color: var(--blue);
+  font-weight: 900;
+}
+
+.solution-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: var(--dark);
+  color: #fff;
+}
+
+.solution-cta h2 {
+  color: #fff;
+}
+
+.solution-cta p:not(.eyebrow) {
+  max-width: 760px;
+  color: #c6cfdb;
+}
+
 .contact-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
@@ -532,6 +616,22 @@ textarea {
   border-radius: 8px;
 }
 
+.join-card {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.join-card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.join-card .button {
+  margin-top: 8px;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -590,8 +690,14 @@ textarea {
 
   .product-grid,
   .solution-grid,
+  .solution-card,
   .detail-cols {
     grid-template-columns: 1fr;
+  }
+
+  .solution-cta {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .compact-products {
