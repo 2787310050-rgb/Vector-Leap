@@ -68,22 +68,33 @@ a {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 8px;
   font-size: 15px;
 }
 
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 6px;
   color: #2c3547;
+  transition: background 160ms ease, color 160ms ease;
 }
 
 .site-nav a:hover {
-  color: var(--blue);
+  color: var(--ink);
+  background: var(--soft);
+}
+
+.site-nav a.active {
+  color: #fff !important;
+  background: var(--ink);
 }
 
 .nav-cta {
-  padding: 10px 16px;
   color: #fff !important;
-  border-radius: 6px;
   background: var(--ink);
 }
 
@@ -279,6 +290,10 @@ a {
   background: linear-gradient(180deg, #f7f9fd 0%, #fff 100%);
 }
 
+.products-hero {
+  padding-bottom: 52px;
+}
+
 .section-head {
   display: flex;
   align-items: end;
@@ -300,6 +315,15 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+}
+
+.product-overview-section {
+  padding-top: 0;
+  padding-bottom: 36px;
+}
+
+.compact-products {
+  margin-top: -26px;
 }
 
 .product-card,
@@ -332,6 +356,39 @@ a {
 .product-card a {
   color: var(--blue);
   font-weight: 800;
+}
+
+.overview-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  box-shadow: 0 16px 42px rgba(13, 24, 44, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.overview-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(36, 91, 255, 0.28);
+  box-shadow: var(--shadow);
+}
+
+.overview-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.overview-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  color: #245bff;
+  background: #eef3ff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .card-index {
@@ -513,6 +570,10 @@ textarea {
     margin: 4px 0;
   }
 
+  .site-nav a {
+    justify-content: flex-start;
+  }
+
   .hero,
   .split,
   .contact-layout {
@@ -531,6 +592,10 @@ textarea {
   .solution-grid,
   .detail-cols {
     grid-template-columns: 1fr;
+  }
+
+  .compact-products {
+    margin-top: 0;
   }
 }
 

@@ -252,6 +252,18 @@ function initNavigation() {
   const nav = document.querySelector(".site-nav");
   if (!toggle || !nav) return;
 
+  const currentPath = window.location.pathname === "/index.html" ? "/" : window.location.pathname;
+  nav.querySelectorAll("a[href]").forEach((link) => {
+    const linkPath = new URL(link.getAttribute("href"), window.location.origin).pathname;
+    const isActive = currentPath === linkPath || (currentPath === "/" && linkPath === "/");
+    link.classList.toggle("active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+
   toggle.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("open");
     toggle.setAttribute("aria-expanded", String(isOpen));
