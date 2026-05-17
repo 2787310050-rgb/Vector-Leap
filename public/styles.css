@@ -94,8 +94,8 @@ a {
 }
 
 .nav-cta {
-  color: #fff !important;
-  background: var(--ink);
+  color: #2c3547 !important;
+  background: transparent;
 }
 
 .lang-toggle,
