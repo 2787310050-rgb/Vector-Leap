@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://vectorleap.xyz/sitemap.xml
+Host: vectorleap.xyz

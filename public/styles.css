@@ -135,6 +135,7 @@ a {
   font-size: clamp(42px, 5.8vw, 82px);
   line-height: 1.05;
   letter-spacing: 0;
+  text-wrap: balance;
 }
 
 .hero-copy,
@@ -431,6 +432,43 @@ a {
   margin-right: auto;
 }
 
+.official-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  gap: 42px;
+  align-items: start;
+  background: #f8fafc;
+  border-top: 1px solid var(--line);
+}
+
+.official-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.official-grid div {
+  padding: 20px 0;
+  border-top: 2px solid var(--ink);
+}
+
+.official-grid strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.official-grid p {
+  margin: 0;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.official-grid a {
+  color: var(--blue);
+  font-weight: 800;
+}
+
 .detail-stack {
   display: grid;
   gap: 26px;
@@ -676,7 +714,8 @@ textarea {
 
   .hero,
   .split,
-  .contact-layout {
+  .contact-layout,
+  .official-section {
     grid-template-columns: 1fr;
   }
 
@@ -691,7 +730,8 @@ textarea {
   .product-grid,
   .solution-grid,
   .solution-card,
-  .detail-cols {
+  .detail-cols,
+  .official-grid {
     grid-template-columns: 1fr;
   }
 
@@ -719,7 +759,8 @@ textarea {
 
   .hero h1,
   .page-hero h1 {
-    font-size: 42px;
+    font-size: 38px;
+    line-height: 1.08;
   }
 
   .metric-grid,
