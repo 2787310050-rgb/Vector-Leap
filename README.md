@@ -20,6 +20,10 @@ http://localhost:3000/
 npm.cmd test
 ```
 
+## Email Notifications
+
+Copy `.env.example` to `.env` on the server and fill in SMTP credentials. When a visitor submits the contact form, the server saves a local backup under `leads/` and sends a notification email to `LEAD_EMAIL_TO`.
+
 ## Notes
 
 - Static pages live in `public/`.

@@ -1,6 +1,9 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
+const nodemailer = require("nodemailer");
+
+loadEnvFile();
 
 const PORT = process.env.PORT || 3000;
 const ROOT = path.join(__dirname, "public");
@@ -19,6 +22,30 @@ const MIME_TYPES = {
   ".jpeg": "image/jpeg",
   ".ico": "image/x-icon"
 };
+
+function loadEnvFile() {
+  const envPath = path.join(__dirname, ".env");
+  if (!fs.existsSync(envPath)) return;
+
+  const lines = fs.readFileSync(envPath, "utf8").split(/\r?\n/);
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+
+    const separator = trimmed.indexOf("=");
+    if (separator === -1) continue;
+
+    const key = trimmed.slice(0, separator).trim();
+    let value = trimmed.slice(separator + 1).trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+
+    if (key && !process.env[key]) {
+      process.env[key] = value;
+    }
+  }
+}
 
 function sendJson(res, status, payload) {
   res.writeHead(status, { "Content-Type": "application/json; charset=utf-8" });
@@ -47,6 +74,93 @@ function sanitizeLead(input) {
   return { lead };
 }
 
+function getEmailConfig() {
+  const host = process.env.SMTP_HOST;
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  const to = process.env.LEAD_EMAIL_TO;
+
+  if (!host || !user || !pass || !to) return null;
+
+  const port = Number(process.env.SMTP_PORT || 465);
+  return {
+    host,
+    port,
+    secure: String(process.env.SMTP_SECURE || port === 465).toLowerCase() === "true",
+    user,
+    pass,
+    to,
+    from: process.env.LEAD_EMAIL_FROM || `"向量跃迁官网" <${user}>`
+  };
+}
+
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function buildLeadEmail(record) {
+  const subject = `官网咨询：${record.company} - ${record.product}`;
+  const rows = [
+    ["姓名", record.name],
+    ["公司", record.company],
+    ["联系方式", record.contact],
+    ["邮箱", record.email || "未填写"],
+    ["感兴趣产品", record.product],
+    ["提交语言", record.language],
+    ["提交时间", record.submittedAt],
+    ["需求描述", record.message]
+  ];
+
+  const text = rows.map(([label, value]) => `${label}: ${value}`).join("\n");
+  const htmlRows = rows.map(([label, value]) => `
+    <tr>
+      <th style="text-align:left;padding:10px 12px;border-bottom:1px solid #e7ebf2;width:120px;color:#111827;">${escapeHtml(label)}</th>
+      <td style="padding:10px 12px;border-bottom:1px solid #e7ebf2;color:#344054;">${escapeHtml(value).replace(/\n/g, "<br>")}</td>
+    </tr>
+  `).join("");
+
+  const html = `
+    <div style="font-family:Arial,'Microsoft YaHei',sans-serif;line-height:1.6;color:#111827;">
+      <h2 style="margin:0 0 16px;">向量跃迁官网收到新的客户咨询</h2>
+      <table style="border-collapse:collapse;width:100%;max-width:720px;border:1px solid #e7ebf2;">${htmlRows}</table>
+    </div>
+  `;
+
+  return { subject, text, html };
+}
+
+async function sendLeadEmail(record) {
+  const config = getEmailConfig();
+  if (!config) return "skipped";
+
+  const transporter = nodemailer.createTransport({
+    host: config.host,
+    port: config.port,
+    secure: config.secure,
+    auth: {
+      user: config.user,
+      pass: config.pass
+    }
+  });
+
+  const email = buildLeadEmail(record);
+  await transporter.sendMail({
+    from: config.from,
+    to: config.to,
+    replyTo: record.email || undefined,
+    subject: email.subject,
+    text: email.text,
+    html: email.html
+  });
+
+  return "sent";
+}
+
 function handleContact(req, res) {
   let body = "";
   req.on("data", (chunk) => {
@@ -56,7 +170,7 @@ function handleContact(req, res) {
     }
   });
 
-  req.on("end", () => {
+  req.on("end", async () => {
     try {
       const parsed = JSON.parse(body || "{}");
       const result = sanitizeLead(parsed);
@@ -72,10 +186,21 @@ function handleContact(req, res) {
         submittedAt: new Date().toISOString(),
         recipient: process.env.LEAD_EMAIL_TO || "business@example.com"
       };
+
+      let emailStatus = "skipped";
+      try {
+        emailStatus = await sendLeadEmail(record);
+      } catch (error) {
+        emailStatus = "failed";
+        console.error("Lead email failed:", error.message);
+      }
+
+      record.emailStatus = emailStatus;
       fs.writeFileSync(path.join(LEADS_DIR, fileName), JSON.stringify(record, null, 2), "utf8");
 
       sendJson(res, 200, {
         ok: true,
+        emailStatus,
         message: result.lead.language === "en"
           ? "Submitted successfully. Our team will contact you soon."
           : "提交成功，我们会尽快与您联系。"
