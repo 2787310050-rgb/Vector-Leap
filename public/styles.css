@@ -120,8 +120,8 @@ a {
   grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
   align-items: center;
   gap: 7vw;
-  min-height: calc(100vh - 72px);
-  padding: 72px 6vw 92px;
+  min-height: min(760px, calc(100vh - 72px));
+  padding: 64px 6vw 72px;
   overflow: hidden;
   background:
     linear-gradient(120deg, rgba(36, 91, 255, 0.08), transparent 35%),
@@ -333,6 +333,27 @@ a {
 .insight-card,
 .fit-grid article {
   padding: 30px;
+}
+
+.product-shot {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f4f7fb;
+}
+
+.overview-card .product-shot {
+  margin: -8px -8px 20px;
+  width: calc(100% + 16px);
+}
+
+.detail-card .product-shot {
+  aspect-ratio: 16 / 7;
+  margin-bottom: 28px;
 }
 
 .product-card h3,
