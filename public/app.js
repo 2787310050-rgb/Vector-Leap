@@ -350,7 +350,7 @@ function headerTemplate() {
       <a href="/solutions" data-i18n="nav.solutions">解决方案</a>
       <a href="/about" data-i18n="nav.about">关于我们</a>
       <a href="/contact" class="nav-cta" data-i18n="nav.contact">联系我们</a>
-      <button class="lang-toggle" type="button" data-lang-toggle>English</button>
+      <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch to English">EN</button>
     </nav>
   `;
 }
@@ -376,7 +376,8 @@ function applyLanguage(language) {
     }
   });
   document.querySelectorAll("[data-lang-toggle]").forEach((button) => {
-    button.textContent = language === "en" ? "中文" : "English";
+    button.textContent = language === "en" ? "中" : "EN";
+    button.setAttribute("aria-label", language === "en" ? "切换到中文" : "Switch to English");
   });
 }
 

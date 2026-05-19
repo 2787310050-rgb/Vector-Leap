@@ -68,7 +68,7 @@ a {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-size: 15px;
 }
 
@@ -100,13 +100,24 @@ a {
 
 .lang-toggle,
 .nav-toggle {
+  display: inline-grid;
+  place-items: center;
   border: 1px solid var(--line);
   background: #fff;
   color: var(--ink);
-  border-radius: 6px;
-  min-height: 38px;
-  padding: 0 13px;
+  border-radius: 999px;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+  font-weight: 800;
+  line-height: 1;
   cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.lang-toggle:hover {
+  border-color: #cfd6e3;
+  background: var(--soft);
 }
 
 .nav-toggle {
@@ -857,6 +868,10 @@ textarea {
 
   .site-nav a {
     justify-content: flex-start;
+  }
+
+  .lang-toggle {
+    align-self: flex-start;
   }
 
   .hero,
