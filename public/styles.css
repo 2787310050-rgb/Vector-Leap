@@ -184,7 +184,18 @@ a {
 
 .hero-visual {
   position: relative;
+  display: grid;
+  place-items: center;
   min-height: 470px;
+}
+
+.hero-product-matrix {
+  width: min(100%, 680px);
+  max-height: 100%;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .dashboard {
@@ -860,7 +871,7 @@ textarea {
   }
 
   .hero-visual {
-    min-height: 420px;
+    min-height: auto;
   }
 
   .product-grid,
@@ -922,7 +933,7 @@ textarea {
   }
 
   .hero-visual {
-    min-height: 560px;
+    min-height: auto;
   }
 
   .contact-form .full,
