@@ -856,12 +856,107 @@ textarea {
 }
 
 .site-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 28px 6vw;
   color: #c6cfdb;
-  background: var(--dark);
+  background: #071024;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.45fr) repeat(4, minmax(140px, 1fr));
+  gap: 34px;
+  padding: 64px 6vw 44px;
+}
+
+.footer-brand {
+  max-width: 360px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.footer-brand strong,
+.footer-col strong {
+  display: block;
+  margin-bottom: 14px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.footer-brand p {
+  margin: 0;
+  color: #9ba8ba;
+  font-size: 14px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.footer-col a,
+.footer-col span {
+  color: #aeb8c8;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  padding: 20px 6vw 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #8d99ac;
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: #aeb8c8;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+.legal-section {
+  padding-top: 36px;
+}
+
+.legal-stack {
+  display: grid;
+  gap: 18px;
+  max-width: 920px;
+}
+
+.legal-card {
+  padding: 28px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 16px 44px rgba(13, 24, 44, 0.06);
+}
+
+.legal-card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.legal-card p {
+  margin: 0;
+  color: var(--muted);
 }
 
 @media (max-width: 980px) {
@@ -949,6 +1044,14 @@ textarea {
   .compact-products {
     margin-top: 0;
   }
+
+  .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 640px) {
@@ -983,7 +1086,17 @@ textarea {
     grid-column: auto;
   }
 
-  .site-footer {
+  .footer-main {
+    grid-template-columns: 1fr;
+    padding: 48px 20px 34px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
     flex-direction: column;
+    padding: 18px 20px 26px;
   }
 }

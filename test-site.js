@@ -6,7 +6,7 @@ async function run() {
   const { port } = server.address();
   const base = `http://127.0.0.1:${port}`;
 
-  for (const route of ["/", "/products", "/solutions", "/about", "/contact"]) {
+  for (const route of ["/", "/products", "/solutions", "/about", "/contact", "/privacy", "/terms"]) {
     const response = await fetch(`${base}${route}`);
     assert.strictEqual(response.status, 200, `${route} should return 200`);
     const html = await response.text();
