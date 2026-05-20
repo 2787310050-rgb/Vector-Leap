@@ -881,6 +881,13 @@ textarea {
   font-weight: 800;
 }
 
+.footer-mark {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
 .footer-brand strong,
 .footer-col strong {
   display: block;

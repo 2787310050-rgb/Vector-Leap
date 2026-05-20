@@ -496,7 +496,7 @@ function footerTemplate() {
     <div class="footer-main">
       <div class="footer-brand">
         <a class="footer-logo" href="/" aria-label="向量跃迁首页">
-          <img class="brand-mark" src="/assets/vector-leap-mark.png" alt="">
+          <img class="footer-mark" src="/assets/vector-leap-mark-white.png" alt="">
           <span data-i18n="brand">向量跃迁</span>
         </a>
         <strong data-i18n="footer.companyTitle">深圳向量跃迁科技有限公司</strong>
