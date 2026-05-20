@@ -37,6 +37,21 @@ async function run() {
   const leadResult = await leadResponse.json();
   assert.strictEqual(leadResult.ok, true, "valid lead should be accepted");
 
+  const personalLeadResponse = await fetch(`${base}/api/contact`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: "个人客户",
+      contact: "wx-personal",
+      product: "灵感方舟",
+      message: "个人身份先了解一下产品",
+      language: "zh"
+    })
+  });
+  assert.strictEqual(personalLeadResponse.status, 200, "lead without company should return 200");
+  const personalLeadResult = await personalLeadResponse.json();
+  assert.strictEqual(personalLeadResult.ok, true, "lead without company should be accepted");
+
   await new Promise((resolve) => server.close(resolve));
   console.log("site checks passed");
 }

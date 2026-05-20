@@ -63,8 +63,8 @@ function sanitizeLead(input) {
     language: String(input.language || "zh").trim()
   };
 
-  if (!lead.name || !lead.company || !lead.contact || !lead.product || !lead.message) {
-    return { error: "请完整填写姓名、公司、联系方式、感兴趣产品和需求描述。" };
+  if (!lead.name || !lead.contact || !lead.product || !lead.message) {
+    return { error: "请完整填写姓名、联系方式、感兴趣产品和需求描述。" };
   }
 
   if (lead.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(lead.email)) {
@@ -104,10 +104,11 @@ function escapeHtml(value) {
 }
 
 function buildLeadEmail(record) {
-  const subject = `官网咨询：${record.company} - ${record.product}`;
+  const leadIdentity = record.company || "个人咨询";
+  const subject = `官网咨询：${leadIdentity} - ${record.product}`;
   const rows = [
     ["姓名", record.name],
-    ["公司", record.company],
+    ["公司/身份", record.company || "个人/未填写"],
     ["联系方式", record.contact],
     ["邮箱", record.email || "未填写"],
     ["感兴趣产品", record.product],
