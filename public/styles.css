@@ -826,22 +826,17 @@ textarea {
   padding: 28px;
 }
 
-.qr-placeholder {
-  display: grid;
-  place-items: center;
-  width: 154px;
-  height: 154px;
+.wechat-qr {
+  display: block;
+  width: 180px;
+  height: 180px;
   margin: 22px 0;
-  color: var(--blue);
-  font-size: 36px;
-  font-weight: 900;
-  background:
-    linear-gradient(90deg, rgba(36, 91, 255, 0.1) 1px, transparent 1px),
-    linear-gradient(rgba(36, 91, 255, 0.1) 1px, transparent 1px),
-    #fff;
-  background-size: 14px 14px;
+  padding: 10px;
+  object-fit: contain;
+  background: #fff;
   border: 1px solid var(--line);
   border-radius: 8px;
+  box-shadow: 0 16px 36px rgba(13, 24, 44, 0.08);
 }
 
 .join-card {
