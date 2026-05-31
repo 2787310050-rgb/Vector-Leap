@@ -6,51 +6,93 @@ const dictionary = {
     "nav.solutions": "解决方案",
     "nav.about": "关于我们",
     "nav.contact": "联系我们",
-    "home.eyebrow": "AI 产品矩阵 · 企业增长引擎",
-    "home.title": "用 AI 产品驱动企业增长与效率跃迁",
-    "home.subtitle": "向量跃迁为企业提供 AI 客服报价助手、灵感方舟、AI 词库知识库与海外电商增长服务，帮助企业更高效地连接客户、内容与业务场景。",
+    "home.eyebrow": "全球电商自动化 · 智能经营基础设施",
+    "home.title": "构建面向全球电商的智能经营基础设施",
+    "home.subtitle": "向量跃迁以 Etsy 等跨境平台为起点，连接市场机会、商品内容、店铺运营、订单履约与客户服务，帮助跨境团队把增长能力沉淀为可复制的系统。",
     "home.ctaPrimary": "预约商务沟通",
     "home.ctaSecondary": "查看产品",
-    "home.productsEyebrow": "产品中心",
-    "home.productsTitle": "主营业务与产品服务，围绕企业增长落地",
-    "home.decisionEyebrow": "老板关心的不是 AI，是业务结果",
-    "home.decisionTitle": "先把能不能落地、能不能转化、能不能长期用讲清楚",
-    "home.decision1Title": "有没有真实入口",
-    "home.decision1Text": "先看客户从哪里来：官网、微信、广告、短视频、展会或销售拜访。AI 只有接到真实入口，才会变成业务资产。",
-    "home.decision2Title": "有没有可衡量结果",
-    "home.decision2Text": "我们优先关注响应速度、线索沉淀、报价效率、内容产出和知识复用这些能被团队感知和复盘的指标。",
-    "home.decision3Title": "能不能持续迭代",
-    "home.decision3Text": "第一版不追求大而全，而是先跑通一个场景，再根据客户反馈、销售话术和数据表现继续升级。",
+    "home.productsEyebrow": "系统能力",
+    "home.productsTitle": "一套系统，覆盖增长、运营与履约",
+    "home.proofEyebrow": "落地实践",
+    "home.proofTitle": "已在真实跨境业务中验证，客户信息预留展示位",
+    "home.proofStatus1": "Etsy 场景 · 已合作落地",
+    "home.proofCase1Title": "跨境店铺自动化经营系统",
+    "home.proofCase1Text": "围绕商品机会、AI 内容生产、刊登任务和履约跟进搭建业务闭环，支持团队把日常运营动作沉淀到系统中。",
+    "home.proofStatus2": "内容生产 · 已投入使用",
+    "home.proofCase2Title": "AI 商品素材与 Listing 工作流",
+    "home.proofCase2Text": "从商品方向到图片、标题、标签和描述草稿，预留人工审核与版本归档，方便持续上新和复盘。",
+    "home.proofStatus3": "客户名称 · 授权后展示",
+    "home.proofCase3Title": "合作公司 Logo 展示区",
+    "home.proofCase3Text": "这里将用于展示已授权的合作公司、落地行业和项目阶段，当前先保留为正式上线前的替换位。",
+    "home.toolPreviewEyebrow": "工具图例",
+    "home.toolPreviewTitle": "从真实工作台形态出发，展示可落地的自动化流程",
+    "home.toolPreview1Tag": "图片工作台",
+    "home.toolPreview1Title": "Prompt、候选图审核与 Listing 草稿联动",
+    "home.toolPreview1Text": "围绕商品图生成、候选图审核、比例与风格控制、Listing 信息补全，把 AI 生图变成可审核、可追踪的生产流程。",
+    "home.toolPreview2Tag": "上架审核",
+    "home.toolPreview2Title": "店铺队列、变体矩阵与发布状态统一管理",
+    "home.toolPreview2Text": "把店铺配置、价格、队列目录、自动发布、分类确认和变体矩阵放到同一工作台，方便批量审核和发布。",
+    "home.visualEyebrow": "跨境经营场景",
+    "home.visualTitle": "把商品、店铺与履约节点连接成可复盘的全球链路",
+    "home.visualText": "系统截图说明产品能力，业务场景图补充跨境经营的真实空间感：从机会发现、商品生产、刊登上新，到订单履约和团队复盘，每个环节都需要被记录、协同和持续优化。",
+    "home.visualPoint1": "多店铺经营",
+    "home.visualPoint2": "订单履约追踪",
+    "home.visualPoint3": "全球业务复盘",
+    "home.visualCaptionTitle": "Global Commerce Loop",
+    "home.visualCaptionText": "从店铺运营动作，到跨境履约结果，形成可追踪的经营闭环。",
+    "home.operatingEyebrow": "经营系统架构",
+    "home.operatingTitle": "覆盖店铺从 0 到 1、从 1 到多店铺复制",
+    "home.operatingIntro": "我们把跨境店铺拆成机会、商品、内容、刊登、订单、客户、复盘七个经营动作，再用系统把它们串成可以持续运行的闭环。",
+    "home.operating1Title": "机会发现",
+    "home.operating1Text": "类目、关键词、竞品、价格和趋势信号持续沉淀。",
+    "home.operating2Title": "商品生产",
+    "home.operating2Text": "商品库、素材库、模板和 AI 内容生成统一管理。",
+    "home.operating3Title": "批量上新",
+    "home.operating3Text": "标题、标签、描述、属性和刊登任务流程化推进。",
+    "home.operating4Title": "订单履约",
+    "home.operating4Text": "出单后自动识别规则，触发发货、交付和异常提醒。",
+    "home.operating5Title": "客户运营",
+    "home.operating5Text": "消息跟进、评价维护、售后节点和服务记录可追踪。",
+    "home.operating6Title": "数据复盘",
+    "home.operating6Text": "商品表现、履约效率、团队动作沉淀为经营看板。",
+    "home.decisionEyebrow": "我们交付的不是单个页面，而是能持续运行的经营结果",
+    "home.decisionTitle": "让团队从重复执行，转向系统化增长",
+    "home.decision1Title": "上新更快",
+    "home.decision1Text": "把商品机会、素材规范和 Listing 字段沉淀成标准流程，减少人工查找、整理和反复录入。",
+    "home.decision2Title": "履约更稳",
+    "home.decision2Text": "把订单、发货、客户通知和异常提醒集中到同一套规则里，降低漏处理和临时救火。",
+    "home.decision3Title": "复盘更清楚",
+    "home.decision3Text": "把商品表现、运营动作和履约结果沉淀到看板，让团队知道下一步该放大什么、修正什么。",
     "home.valueEyebrow": "为什么选择向量跃迁",
-    "home.valueTitle": "把 AI 能力变成企业能看见的增长结果",
-    "home.value1Title": "业务场景优先",
-    "home.value1": "从客户咨询、内容处理到知识资产沉淀，围绕真实业务流程设计产品与服务。",
-    "home.value2Title": "快速落地部署",
-    "home.value2": "第一阶段聚焦可上线、可演示、可迭代，让企业更快看到价值。",
-    "home.value3Title": "持续产品化",
-    "home.value3": "用标准化产品承接定制需求，降低后续维护与扩展成本。",
+    "home.valueTitle": "以 Etsy 为核心场景，向完整跨境经营系统延展",
+    "home.value1Title": "经营链路完整",
+    "home.value1": "选品、内容、刊登、订单、客服、发货、评价和复盘在同一工作流里打通，而不是堆几个孤立工具。",
+    "home.value2Title": "自动化可控",
+    "home.value2": "AI 生图、文案、刊登和发货都可以先半自动运行，关键节点保留人工审核，稳定后再提高自动化比例。",
+    "home.value3Title": "团队协作可扩展",
+    "home.value3": "预留多店铺、角色权限、商品字段、素材资产、客服记录和经营看板，方便后续按业务节奏加深。",
     "home.processEyebrow": "落地流程",
-    "home.processTitle": "从一次业务诊断开始，把 AI 接进真实流程",
-    "home.process1Title": "业务诊断",
-    "home.process1Text": "梳理客户来源、现有销售流程、内容运营方式和知识资料情况，判断最适合先切入的场景。",
-    "home.process2Title": "方案确认",
-    "home.process2Text": "明确产品边界、首版功能、所需资料和交付节奏，让投入范围和预期结果更清楚。",
-    "home.process3Title": "上线演示",
-    "home.process3Text": "优先交付可使用、可展示、可对接客户的版本，方便老板和团队快速判断价值。",
-    "home.process4Title": "持续优化",
-    "home.process4Text": "根据真实咨询、内容反馈和销售场景继续训练话术、补充素材、优化流程。",
+    "home.processTitle": "从一个店铺闭环开始，逐步搭成跨境电商自动化中台",
+    "home.process1Title": "机会采集",
+    "home.process1Text": "确认类目、关键词、公开/授权数据源、采集边界和平台规则，建立首版商品机会池。",
+    "home.process2Title": "商品生产",
+    "home.process2Text": "根据商品方向生成主图、场景图、标题、标签、描述和属性草稿，再进入审核、改版和素材归档。",
+    "home.process3Title": "刊登运营",
+    "home.process3Text": "把审核后的商品资料推入刊登任务，按店铺、类目、节奏和运营策略做批量上新与状态跟进。",
+    "home.process4Title": "履约复盘",
+    "home.process4Text": "触发发货、数字交付、客服通知和异常提醒，并把订单表现、评价反馈和团队动作沉淀到看板。",
     "home.faqEyebrow": "常见问题",
-    "home.faqTitle": "先回答客户最容易犹豫的几个问题",
-    "home.faq1Question": "第一版需要准备很多资料吗？",
-    "home.faq1Answer": "不需要一开始就准备完整资料。通常先提供产品介绍、常见客户问题、销售话术、商品资料或视频素材，我们会先整理成可用的知识和流程结构。",
-    "home.faq2Question": "多久能看到可以演示的版本？",
-    "home.faq2Answer": "第一阶段会优先做能演示、能沟通、能验证方向的版本。具体周期取决于资料完整度和场景复杂度，商务沟通后会给出更明确的节奏。",
-    "home.faq3Question": "现在不知道先做哪个产品怎么办？",
-    "home.faq3Answer": "可以先从最影响转化和效率的问题开始判断：出海经营看海外电商增长项目，咨询和报价多看 AI 客服报价助手，内容素材要复用看灵感方舟，话术资料分散看 AI 词库知识库。",
+    "home.faqTitle": "先回答跨境团队最关心的几个问题",
+    "home.faq1Question": "第一版需要准备哪些资料？",
+    "home.faq1Answer": "通常先准备目标类目、商品方向、素材风格、发货方式、现有店铺流程和可用数据来源。资料不完整也可以先从一个类目或一批商品跑通。",
+    "home.faq2Question": "爬取和采集会不会有风险？",
+    "home.faq2Answer": "我们会优先围绕公开数据、授权数据和平台允许的接口/页面做合规采集，不做破坏平台规则或侵犯第三方权益的采集方式。",
+    "home.faq3Question": "系统可以做到全自动吗？",
+    "home.faq3Answer": "可以逐步接近全自动，但第一版通常建议半自动上线：采集、生图、文案、刊登、发货和客服先由系统生成任务，关键节点人工审核，稳定后再放开更多自动化规则。",
     "home.faq4Question": "后续可以继续扩展吗？",
-    "home.faq4Answer": "可以。我们会把首版做成可迭代的结构，后续可以继续接入更多知识库、客户入口、视频素材、报价规则和业务模块。",
-    "home.finalCtaTitle": "想了解向量跃迁如何接入你的业务？",
-    "home.finalCtaText": "留下需求，我们会根据你的行业、客户来源和业务流程提供产品建议。",
+    "home.faq4Answer": "可以。系统结构会预留商品字段、角色权限、店铺数据、素材库、客服记录、履约规则和运营看板等扩展空间，后续可按团队节奏逐步加深。",
+    "home.finalCtaTitle": "把跨境店铺沉淀为可复制的经营底座",
+    "home.finalCtaText": "留下当前平台、类目、店铺阶段、发货方式和最想自动化的环节，我们会判断第一版从机会采集、商品内容、批量刊登、履约还是客服运营切入。",
     "home.finalCtaButton": "提交咨询",
     "home.officialEyebrow": "官方信息",
     "home.officialTitle": "向量跃迁官方渠道与商务信息",
@@ -58,112 +100,114 @@ const dictionary = {
     "home.officialName": "向量跃迁 / Vector Leap",
     "home.officialDomainTitle": "官方域名",
     "home.officialContactTitle": "商务联系",
-    "products.pageTitle": "让产品服务进入真实业务流程",
-    "products.pageIntro": "围绕出海经营、客户咨询、报价转化、内容素材管理和企业知识沉淀，构建可落地、可演示、可扩展的产品服务矩阵。",
-    "products.fitEyebrow": "先做哪个业务",
-    "products.fitTitle": "从最影响增长效率的环节开始",
-    "products.fitServiceTitle": "咨询和报价来不及处理",
-    "products.fitServiceText": "官网、广告、微信或私域已经有咨询，但回复不及时、报价靠人工整理、线索分散，优先考虑 AI 客服报价助手。",
-    "products.fitMediaTitle": "视频内容处理效率低",
-    "products.fitMediaText": "短视频、直播切片和平台素材很多，但下载、转写、总结、拆解和归档流程分散，优先考虑灵感方舟。",
-    "products.fitLexiconTitle": "话术和资料不统一",
-    "products.fitLexiconText": "客服回复、知识库、商品资料和报价规则分散在不同人手里，团队新人难复制，优先考虑 AI 词库知识库。",
-    "products.fitCommerceTitle": "想做海外市场但缺少闭环",
-    "products.fitCommerceText": "企业有产品、供应链或内容能力，但选品验证、店铺搭建、内容获客和客服承接没有形成流程，优先考虑海外电商增长项目。",
-    "products.service.name": "AI客服报价助手",
-    "products.service.desc": "面向企业咨询、售前接待、商品报价与售后响应的智能客服系统。",
-    "products.service.point1": "自动接待客户咨询",
-    "products.service.point2": "沉淀高价值线索",
-    "products.service.point3": "自动生成报价单",
-    "products.service.long": "适合需要提升咨询响应、话术质量、商品报价和售后效率的企业。系统可基于知识库生成专业回复，并从商品库快速生成 Excel 与 PDF 报价单。",
-    "products.service.audience": "企业老板、销售团队、客服团队、招商与售前团队。",
-    "products.service.capability": "意图识别、话术生成、报价生成、知识库管理、多风格回复。",
-    "products.service.value": "减少重复沟通和手工报价，让咨询更快变成标准回复、报价单和可跟进线索。",
-    "products.media.name": "灵感方舟",
-    "products.media.desc": "面向短视频素材采集、转写、总结、拆解与内容库管理的内容运营工作台。",
-    "products.media.point1": "视频下载与转写",
-    "products.media.point2": "内容总结与文案拆解",
-    "products.media.point3": "内容库和账号跟踪",
-    "products.media.long": "适合希望通过短视频、直播切片、平台素材和内容复用提升增长效率的团队，帮助把素材采集、转写整理、内容拆解、账号跟踪和团队协作变成稳定流程。",
-    "products.media.audience": "企业老板、市场团队、新媒体运营、招商获客团队。",
-    "products.media.capability": "视频下载、视频转写、内容总结、文案拆解、账号跟踪、内容库与团队协作。",
-    "products.media.value": "减少素材整理和内容复盘成本，让团队稳定沉淀可复用的选题、脚本与视频资产。",
-    "products.lexicon.name": "AI词库知识库",
-    "products.lexicon.desc": "把话术、知识库、商品库和报价规则整理成可复用的企业知识资产。",
-    "products.lexicon.point1": "标准话术沉淀",
-    "products.lexicon.point2": "知识库统一管理",
-    "products.lexicon.point3": "商品与报价规则复用",
-    "products.lexicon.long": "面向客服、销售和运营团队，把标准话术、知识库、商品库、报价规则和 Prompt 模板统一管理，让 AI 回复和报价有一致的业务依据。",
-    "products.lexicon.audience": "客服团队、销售团队、运营团队、需要统一业务资料的企业。",
-    "products.lexicon.capability": "知识导入导出、关键词与标准答案维护、商品库管理、Prompt 模板、扩展模块配置。",
-    "products.lexicon.value": "让经验从个人手里沉淀到系统里，提升回复一致性、报价准确性和团队复制效率。",
-    "products.commerce.name": "海外电商增长项目",
-    "products.commerce.desc": "面向跨境与海外市场的选品、店铺/独立站、内容获客、客服承接与数据复盘服务。",
-    "products.commerce.point1": "选品与市场验证",
-    "products.commerce.point2": "店铺/独立站运营",
-    "products.commerce.point3": "内容获客与数据复盘",
-    "products.commerce.long": "适合准备进入海外市场，或已经有供应链、品牌和内容能力但缺少经营闭环的企业。我们从目标市场、选品验证、店铺/独立站搭建、内容入口、客服承接和数据复盘出发，帮助企业把海外电商从试水动作变成可持续经营流程。",
-    "products.commerce.audience": "有出海业务规划的企业老板、品牌方、供应链团队、内容和运营团队。",
-    "products.commerce.capability": "海外市场调研、选品验证、店铺/独立站搭建、内容获客、客服承接、订单与数据复盘。",
-    "products.commerce.value": "帮助团队更清楚地判断品类、渠道和投放节奏，降低盲目试错成本，逐步建立海外增长闭环。",
+    "products.pageTitle": "跨境电商智能经营系统，Etsy 场景深度适配",
+    "products.pageIntro": "我们把 Etsy 运营拆成机会发现、商品内容、刊登优化、订单履约、客服评价、数据复盘六个模块，帮助团队从单店跑通到多店铺复制。",
+    "products.fitEyebrow": "先做哪个模块",
+    "products.fitTitle": "按店铺最卡的经营环节切入",
+    "products.fitServiceTitle": "商品图片和素材要批量生成",
+    "products.fitServiceText": "需要批量生成主图、场景图、变体图、标题、标签和描述，优先搭建 AI 商品内容生产能力。",
+    "products.fitMediaTitle": "要稳定发现商品机会并批量上新",
+    "products.fitMediaText": "需要采集公开商品、关键词、价格和趋势参考，再生成 Listing 草稿与刊登任务，优先搭建选品采集与刊登自动化。",
+    "products.fitLexiconTitle": "订单、客服、评价和发货靠人工盯",
+    "products.fitLexiconText": "订单、数字文件、物流任务、客户通知、售后和评价维护分散处理，优先搭建订单履约与店铺运营能力。",
+    "products.fitCommerceTitle": "想把店铺运营整套系统化",
+    "products.fitCommerceText": "从机会采集、商品生产、批量刊登、订单履约到客服评价和数据复盘都想系统化，优先考虑跨境电商智能经营系统。",
+    "products.service.name": "AI 商品内容生产",
+    "products.service.desc": "根据商品方向、关键词和风格模板，批量生成主图、场景图、变体图、标题、标签、描述和 Listing 素材。",
+    "products.service.point1": "商品图片生成",
+    "products.service.point2": "Listing 文案生产",
+    "products.service.point3": "素材审核归档",
+    "products.service.long": "适合图片和文案产能跟不上、商品数量多、需要统一视觉风格和上新节奏的团队。系统可围绕关键词、款式、风格模板、尺寸规范和 Listing 字段生成内容，并保留人工审核、替换和版本管理。",
+    "products.service.audience": "Etsy 新店、数字商品卖家、POD 团队、跨境运营团队、负责商品内容和上新节奏的负责人。",
+    "products.service.capability": "AI 主图生成、场景图生成、变体图生成、标题/标签/描述草稿、素材模板、批量导出、人工审核、版本归档。",
+    "products.service.value": "减少重复做图、改图和写文案时间，让商品内容生产更稳定，方便批量测试款式、类目和不同店铺策略。",
+    "products.media.name": "选品采集与刊登自动化",
+    "products.media.desc": "围绕公开数据和授权数据采集商品、关键词、价格、趋势和竞品参考，并生成 Listing 草稿、刊登任务和上新节奏。",
+    "products.media.point1": "机会数据采集",
+    "products.media.point2": "关键词/价格参考",
+    "products.media.point3": "批量刊登任务",
+    "products.media.long": "适合需要持续选品、观察竞品、测试新品和批量上架的团队。系统围绕公开页面、授权数据和接口规则做合规采集，整理关键词、价格区间、类目参考、素材方向和刊登字段，再进入 Listing 生成与上新流程。",
+    "products.media.audience": "Etsy 选品团队、跨境运营、店铺负责人、品牌方和多店铺团队。",
+    "products.media.capability": "公开数据采集、关键词采集、价格参考、竞品记录、商品机会池、Listing 草稿、刊登任务、异常提示。",
+    "products.media.value": "把选品和上架从人工搜索、复制、粘贴变成可追踪流程，提升测试新品、批量刊登和团队复盘效率。",
+    "products.lexicon.name": "订单履约与店铺运营",
+    "products.lexicon.desc": "出单后自动匹配商品类型、数字文件、物流规则、客户通知、客服跟进和评价维护，触发履约任务并追踪状态。",
+    "products.lexicon.point1": "订单自动分配",
+    "products.lexicon.point2": "发货/交付规则",
+    "products.lexicon.point3": "客服评价跟进",
+    "products.lexicon.long": "面向订单处理、履约、客服和评价维护压力较高的团队，把订单识别、数字文件交付、物流任务、客户通知、售后记录、评价跟进和异常处理集中到系统里，让出单后的动作有状态、有提醒、有复盘。",
+    "products.lexicon.audience": "Etsy 店铺负责人、客服/售后团队、数字商品卖家、多店铺运营和需要履约协作的跨境团队。",
+    "products.lexicon.capability": "订单同步、商品类型匹配、数字文件交付、物流任务流转、客户消息记录、评价维护、发货状态、异常提醒、履约看板。",
+    "products.lexicon.value": "降低漏发、错发、延迟跟进和客服遗漏，让出单后的店铺运营从人工记忆变成稳定自动化流程。",
+    "products.fulfillmentVisualTitle": "把履约动作从临时处理变成稳定流程",
+    "products.fulfillmentVisualText": "订单、文件、物流、客服和异常提醒统一进入工作台，方便团队追踪每一次交付状态。",
+    "products.commerce.name": "跨境电商智能经营系统",
+    "products.commerce.desc": "面向 Etsy 及跨境团队的一体化经营中台，覆盖选品采集、AI 商品内容、批量刊登、订单履约、客服评价和经营复盘。",
+    "products.commerce.point1": "机会采集",
+    "products.commerce.point2": "内容生产 + 上新",
+    "products.commerce.point3": "履约/客服/复盘",
+    "products.commerce.long": "适合准备系统化经营 Etsy，或已经有店铺但运营流程分散的团队。系统从公开数据合规采集、商品机会池、AI 商品内容生产、Listing 生成、刊登任务、订单处理、自动发货、客服评价和数据复盘出发，帮助团队把日常运营变成可复制的经营系统。",
+    "products.commerce.audience": "Etsy 卖家、跨境电商团队、供应链团队、品牌方、多店铺运营团队和想把店铺标准化复制的创业团队。",
+    "products.commerce.capability": "数据采集、商品库、素材库、AI 生图、Listing 生成、刊登任务、订单处理、自动发货、客服跟进、评价维护、团队看板、经营复盘。",
+    "products.commerce.value": "帮助团队降低选品、做图、上架、发货和客服跟进的重复成本，让跨境店铺从人工运营升级为系统化运营。",
     "products.deliveryEyebrow": "交付方式",
-    "products.deliveryTitle": "先交付能跑通业务的第一版，再逐步加深",
-    "products.delivery1Title": "资料整理",
-    "products.delivery1Text": "把产品资料、常见问题、销售话术、视频素材、商品规则和海外市场信息整理成可使用的结构。",
-    "products.delivery2Title": "首版上线",
-    "products.delivery2Text": "围绕一个明确业务入口上线第一版，优先保证可沟通、可演示、可迭代。",
-    "products.delivery3Title": "复盘优化",
-    "products.delivery3Text": "根据真实客户问题、团队反馈、订单数据和业务重点继续补充知识、优化话术、内容流程与出海节奏。",
-    "solutions.title": "按业务问题设计落地方案",
-    "solutions.intro": "解决方案不是简单介绍产品，而是从企业遇到的具体问题出发，判断应该先接入哪类能力、如何落地、怎样产生业务结果。",
+    "products.deliveryTitle": "先跑通一个店铺经营闭环，再逐步扩展到多店铺运营",
+    "products.delivery1Title": "经营链路诊断",
+    "products.delivery1Text": "梳理目标平台、类目、商品来源、数据边界、上新节奏、发货方式、客服流程和团队分工，确定第一版最值得自动化的闭环。",
+    "products.delivery2Title": "经营中台搭建",
+    "products.delivery2Text": "围绕商品库、素材库、Listing 字段、审核流程、刊登任务、订单规则和团队权限上线首版工作台。",
+    "products.delivery3Title": "运营复盘加深",
+    "products.delivery3Text": "根据商品表现、订单履约、客服异常和团队效率继续加深自动化规则，把系统从能跑通升级为能规模化复制。",
+    "solutions.title": "围绕跨境店铺经营闭环设计自动化方案",
+    "solutions.intro": "我们从 Etsy 等跨境店铺的真实经营链路出发，判断应该先自动化机会采集、商品内容、批量刊登、订单履约、客服评价还是经营复盘。",
     "solutions.problemLabel": "典型问题",
     "solutions.solutionLabel": "解决方式",
     "solutions.relatedProduct": "关联产品",
-    "solutions.sales.tag": "咨询多、跟进慢、线索容易丢",
-    "solutions.sales.title": "客户咨询与销售转化方案",
-    "solutions.sales.problem": "客户从官网、微信、广告或私域入口咨询时，销售经常来不及回复，重复问题占用大量时间，高意向线索也容易混在普通咨询里。",
-    "solutions.sales.point1": "用 AI 客服报价助手先承接常见咨询，保持基础响应在线。",
-    "solutions.sales.point2": "根据客户问题识别购买意向、预算、行业和产品需求。",
-    "solutions.sales.point3": "把有效线索沉淀成可跟进记录，方便销售后续沟通。",
-    "solutions.content.tag": "内容难持续、账号运营效率低",
-    "solutions.content.title": "内容素材管理与账号增长方案",
-    "solutions.content.problem": "企业想通过短视频、直播切片和私域内容获客，但素材下载、转写、总结拆解和内容库管理分散，导致账号难以持续输出。",
-    "solutions.content.point1": "支持视频下载、转写和总结，把外部素材快速变成可复盘内容。",
-    "solutions.content.point2": "辅助拆解爆款文案、账号内容和脚本结构，降低创作门槛。",
-    "solutions.content.point3": "管理内容库、账号跟踪和团队协作，让内容运营从临时动作变成稳定流程。",
-    "solutions.knowledge.tag": "话术分散、资料难复用、团队复制慢",
-    "solutions.knowledge.title": "AI 词库与知识资产方案",
-    "solutions.knowledge.problem": "客服回复、销售话术、商品资料和报价规则散落在不同表格、文档和个人经验里，新人很难快速复制，AI 回复也容易缺少统一依据。",
-    "solutions.knowledge.point1": "把常见问题、标准答案、商品库和报价规则整理成统一知识结构。",
-    "solutions.knowledge.point2": "通过 Prompt 模板和扩展模块约束回复风格、报价逻辑与业务边界。",
-    "solutions.knowledge.point3": "让客服、销售和运营共用同一套知识资产，减少重复培训和人工纠错。",
-    "solutions.commerce.tag": "想做海外市场、但缺少从选品到转化的闭环",
-    "solutions.commerce.title": "海外电商出海增长方案",
-    "solutions.commerce.problem": "企业有产品、供应链或内容能力，但海外市场判断、平台规则、内容投放、客服承接和复盘流程分散，容易停留在试水阶段。",
-    "solutions.commerce.point1": "先围绕目标市场和产品优势做选品与需求验证。",
-    "solutions.commerce.point2": "搭建店铺/独立站、内容入口和客服承接流程。",
-    "solutions.commerce.point3": "用销售数据、咨询反馈和内容表现持续复盘品类、价格和投放节奏。",
-    "solutions.ctaEyebrow": "不知道先做哪个？",
-    "solutions.ctaTitle": "先从最影响转化和效率的问题开始",
-    "solutions.ctaText": "告诉我们你现在的客户来源、销售流程、内容运营或知识资料情况，向量跃迁会帮你判断优先落地路径。",
-    "about.title": "让 AI 从概念走进企业经营现场",
-    "about.intro": "向量跃迁专注企业 AI 产品化落地，帮助企业把客户服务、内容增长和知识资产变成可复制的数字能力。",
+    "solutions.sales.tag": "需要稳定发现新品、竞品和市场机会",
+    "solutions.sales.title": "机会采集与选品洞察方案",
+    "solutions.sales.problem": "选品、关键词、价格、竞品和趋势参考靠人工搜索和复制，效率低，也难以沉淀判断依据。",
+    "solutions.sales.point1": "按类目、关键词和规则采集公开/授权数据。",
+    "solutions.sales.point2": "沉淀价格区间、图片风格、标题关键词、评价信号和商品方向。",
+    "solutions.sales.point3": "把采集结果进入商品机会池、内容生产和 Listing 生产流程。",
+    "solutions.content.tag": "商品内容和上新节奏需要规模化",
+    "solutions.content.title": "AI 商品内容与批量上新方案",
+    "solutions.content.problem": "商品主图、场景图、标题、标签、描述和属性字段需要大量重复制作，人工做图和写文案很容易卡住上新节奏。",
+    "solutions.content.point1": "根据商品方向和风格模板生成主图、场景图、变体图和素材版本。",
+    "solutions.content.point2": "自动生成标题、标签、描述和属性草稿，保留人工审核。",
+    "solutions.content.point3": "把图片、文案、字段和版本记录关联到同一商品，方便批量刊登。",
+    "solutions.knowledge.tag": "出单后发货、客服、评价和异常处理分散",
+    "solutions.knowledge.title": "履约客服与店铺运营方案",
+    "solutions.knowledge.problem": "出单后要人工判断商品类型、发文件、建物流任务、通知客户、处理售后和维护评价，容易漏发、错发、延迟或遗忘。",
+    "solutions.knowledge.point1": "按商品类型自动匹配数字文件、物流规则、客服话术或处理任务。",
+    "solutions.knowledge.point2": "自动触发发货/交付、客户通知、异常提醒和评价维护节点。",
+    "solutions.knowledge.point3": "用履约与客服看板复盘发货效率、异常原因、评价反馈和商品表现。",
+    "solutions.commerce.tag": "想把店铺做成可复制的经营系统",
+    "solutions.commerce.title": "跨境店铺自动化经营方案",
+    "solutions.commerce.problem": "机会采集、做图、写 Listing、刊登、订单、发货、客服和复盘分散在不同工具和人工流程里，难以规模化上新、协作和复制。",
+    "solutions.commerce.point1": "先跑通公开数据采集、AI 商品内容和 Listing 生成。",
+    "solutions.commerce.point2": "接入刊登任务、订单识别、自动发货、客服跟进和评价维护规则。",
+    "solutions.commerce.point3": "用一批真实商品试运行，再逐步扩展类目、店铺、角色权限和团队看板。",
+    "solutions.ctaEyebrow": "不知道先做哪个模块？",
+    "solutions.ctaTitle": "先从你现在最想自动化的经营环节开始",
+    "solutions.ctaText": "告诉我们你现在卡在选品、内容、刊登、订单、发货、客服还是复盘，向量跃迁会帮你判断第一版先跑通哪条闭环。",
+    "about.title": "专注跨境电商自动化经营系统",
+    "about.intro": "向量跃迁以 Etsy 为核心落地场景，帮助跨境团队把机会采集、AI 商品内容、Listing 刊登、订单履约、客服评价和数据复盘变成稳定、可协作、可扩展的经营系统。",
     "about.missionTitle": "我们的方向",
-    "about.mission1Title": "产品化",
-    "about.mission1": "用稳定产品承接业务需求，减少一次性项目带来的维护压力。",
-    "about.mission2Title": "场景化",
-    "about.mission2": "优先理解客户经营问题，再设计 AI 介入方式。",
-    "about.mission3Title": "可增长",
-    "about.mission3": "让每一次上线都能继续积累数据、流程和转化经验。",
-    "contact.title": "预约一次面向业务结果的增长沟通",
-    "contact.intro": "告诉我们你的行业、产品和客户来源，我们会判断哪类产品服务最适合先落地。",
+    "about.mission1Title": "聚焦跨境经营",
+    "about.mission1": "不把自己定位成单个插件或小工具，而是围绕跨境店铺的真实经营链路打磨系统。",
+    "about.mission2Title": "流程优先",
+    "about.mission2": "先理解采集来源、内容规范、上架规则、发货方式、客服节点和团队协作，再设计自动化。",
+    "about.mission3Title": "长期可迭代",
+    "about.mission3": "让系统随着类目、平台、店铺阶段、团队规模、客服流程和履约规则逐步扩展。",
+    "contact.title": "预约一次跨境店铺经营诊断",
+    "contact.intro": "告诉我们你当前的平台、类目、店铺数量、发货方式和最想自动化的经营环节，我们会判断第一版适合先跑通哪条闭环。",
     "contact.name": "姓名",
     "contact.company": "公司/个人身份（选填）",
     "contact.contact": "手机号/微信",
     "contact.email": "邮箱",
-    "contact.product": "感兴趣业务",
+    "contact.product": "当前阶段/关注能力",
     "contact.productPlaceholder": "请选择",
-    "contact.allProducts": "综合咨询",
+    "contact.allProducts": "还不确定，先综合咨询",
     "contact.message": "需求描述",
     "contact.submit": "提交咨询",
     "contact.directTitle": "商务对接",
@@ -171,31 +215,23 @@ const dictionary = {
     "contact.wechat": "微信",
     "contact.mail": "邮箱",
     "contact.phone": "电话",
-    "careers.title": "加入我们",
-    "careers.text": "向量跃迁正在寻找对 AI 产品、企业服务和行业数字化感兴趣的伙伴。如果你关注产品、技术、销售或内容增长，欢迎通过微信或邮箱联系我们。",
-    "careers.cta": "联系加入",
     "footer.companyTitle": "深圳向量跃迁科技有限公司",
-    "footer.companyDesc": "围绕企业增长与效率提升，提供可落地的业务服务与 AI 产品，帮助团队把客户、内容和知识转化为可复用的经营能力。",
+    "footer.companyDesc": "专注跨境电商自动化经营系统，帮助团队把机会采集、AI 商品内容、刊登、订单、发货、客服和复盘变成稳定运营流程。",
     "footer.company": "公司",
     "footer.business": "主营业务",
-    "footer.solutions": "解决方案",
     "footer.contact": "商务联系",
     "footer.about": "关于我们",
     "footer.privacy": "隐私政策",
     "footer.terms": "服务条款",
-    "footer.commerce": "海外电商增长项目",
-    "footer.aiService": "AI客服报价助手",
-    "footer.media": "灵感方舟",
-    "footer.lexicon": "AI词库知识库",
-    "footer.solutionCommerce": "海外电商出海增长",
-    "footer.solutionSales": "客户咨询与销售转化",
-    "footer.solutionContent": "内容素材管理",
-    "footer.solutionKnowledge": "知识资产沉淀",
+    "footer.commerce": "跨境电商智能经营系统",
+    "footer.aiService": "AI 商品内容生产",
+    "footer.media": "选品采集与刊登",
+    "footer.lexicon": "履约客服运营",
     "footer.email": "邮箱：wang2797545062@gmail.com",
     "footer.phone": "电话：188 1448 5834",
     "footer.wechat": "微信：kaze005",
     "footer.address": "地址：广东省深圳市",
-    "footer.icp": "ICP备案号：待备案",
+    "footer.icp": "粤ICP备2026052555号",
     "footer.police": "公安备案号：待办理",
     "common.learnMore": "了解更多",
     "common.audience": "适用客户",
@@ -203,7 +239,7 @@ const dictionary = {
     "common.value": "业务价值",
     "common.book": "预约咨询",
     "footer.copy": "© 2026 深圳向量跃迁科技有限公司. All rights reserved.",
-    "footer.note": "官方网站 vectorleap.xyz · 企业增长与 AI 产品服务.",
+    "footer.note": "官方网站 vectorleap.xyz · 跨境电商智能经营系统.",
     "legal.privacyEyebrow": "隐私政策",
     "legal.privacyTitle": "向量跃迁官网隐私政策",
     "legal.privacyIntro": "本政策说明深圳向量跃迁科技有限公司如何处理你在官网咨询、浏览和商务沟通过程中提供的信息。",
@@ -242,51 +278,93 @@ const dictionary = {
     "nav.solutions": "Solutions",
     "nav.about": "About",
     "nav.contact": "Contact",
-    "home.eyebrow": "AI Product Matrix · Business Growth Engine",
-    "home.title": "AI Products for Business Growth and Operational Leap",
-    "home.subtitle": "Vector Leap provides AI service and quotation tools, Inspiration Ark, AI lexicon knowledge base, and overseas e-commerce growth services to help companies connect customers, content, and business scenarios more efficiently.",
+    "home.eyebrow": "Global Commerce Automation · Operating Infrastructure",
+    "home.title": "Intelligent Operating Infrastructure for Global Commerce",
+    "home.subtitle": "Vector Leap starts with Etsy and other cross-border commerce platforms, connecting market opportunities, product content, store operations, fulfillment, and customer service into repeatable operating systems.",
     "home.ctaPrimary": "Book a Consultation",
     "home.ctaSecondary": "Explore Products",
-    "home.productsEyebrow": "Products",
-    "home.productsTitle": "Core services and products for business growth",
-    "home.decisionEyebrow": "Business outcomes first",
-    "home.decisionTitle": "Clarify deployment, conversion, and long-term use before building",
-    "home.decision1Title": "Real business entry points",
-    "home.decision1Text": "We first look at where customers come from: website, WeChat, ads, short video, exhibitions, or sales visits. AI becomes a business asset only when it connects to real entry points.",
-    "home.decision2Title": "Measurable outcomes",
-    "home.decision2Text": "We focus on response speed, lead capture, quotation efficiency, content output, and knowledge reuse: indicators your team can feel and review.",
-    "home.decision3Title": "Continuous iteration",
-    "home.decision3Text": "The first version does not need to do everything. It should prove one scenario, then improve with customer feedback, sales scripts, and data.",
+    "home.productsEyebrow": "System Capabilities",
+    "home.productsTitle": "One system for growth, operations, and fulfillment",
+    "home.proofEyebrow": "Proven Work",
+    "home.proofTitle": "Validated in real cross-border operations, with client slots reserved",
+    "home.proofStatus1": "Etsy scenario · Delivered with partner",
+    "home.proofCase1Title": "Cross-border Store Operating System",
+    "home.proofCase1Text": "A business loop for product opportunities, AI content, publishing tasks, and fulfillment follow-up, helping teams move daily operations into the system.",
+    "home.proofStatus2": "Content production · In use",
+    "home.proofCase2Title": "AI Product Assets and Listing Workflow",
+    "home.proofCase2Text": "From product direction to images, titles, tags, and description drafts, with review and version archive reserved for ongoing launches.",
+    "home.proofStatus3": "Client names · Shown after approval",
+    "home.proofCase3Title": "Partner Logo Display Area",
+    "home.proofCase3Text": "This area is reserved for approved partner companies, landing industries, and project stages before the official launch.",
+    "home.toolPreviewEyebrow": "Tool Previews",
+    "home.toolPreviewTitle": "Built from real workspace patterns, showing automation flows that can actually run",
+    "home.toolPreview1Tag": "Image Workspace",
+    "home.toolPreview1Title": "Prompt, candidate review, and Listing draft workflow",
+    "home.toolPreview1Text": "Connect product image generation, candidate review, ratio and style controls, and Listing information into an auditable production workflow.",
+    "home.toolPreview2Tag": "Publishing Review",
+    "home.toolPreview2Title": "Store queues, variation matrix, and publishing status in one place",
+    "home.toolPreview2Text": "Manage store settings, pricing, queue folders, auto-publishing, category confirmation, and variation matrices in one review workspace.",
+    "home.visualEyebrow": "Cross-border Operating Context",
+    "home.visualTitle": "Connect products, stores, and fulfillment into a reviewable global loop",
+    "home.visualText": "Product screens explain system capability, while business visuals add the real-world scale of cross-border operations: from opportunity discovery and product production to publishing, fulfillment, and team review.",
+    "home.visualPoint1": "Multi-store operations",
+    "home.visualPoint2": "Fulfillment tracking",
+    "home.visualPoint3": "Global review loop",
+    "home.visualCaptionTitle": "Global Commerce Loop",
+    "home.visualCaptionText": "Turn store actions and cross-border fulfillment outcomes into a trackable operating loop.",
+    "home.operatingEyebrow": "Operating Architecture",
+    "home.operatingTitle": "Cover the store journey from zero to one, and from one store to many",
+    "home.operatingIntro": "We break store operations into opportunity, product, content, publishing, order, customer, and review workflows, then connect them into a loop that can keep running.",
+    "home.operating1Title": "Opportunity Discovery",
+    "home.operating1Text": "Collect category, keyword, competitor, pricing, and trend signals.",
+    "home.operating2Title": "Product Production",
+    "home.operating2Text": "Manage product data, assets, templates, and AI-generated content.",
+    "home.operating3Title": "Batch Publishing",
+    "home.operating3Text": "Move titles, tags, descriptions, attributes, and publishing tasks forward.",
+    "home.operating4Title": "Order Fulfillment",
+    "home.operating4Text": "Recognize order rules and trigger delivery, fulfillment, or exception handling.",
+    "home.operating5Title": "Customer Operations",
+    "home.operating5Text": "Track messages, reviews, after-sales steps, and service records.",
+    "home.operating6Title": "Performance Review",
+    "home.operating6Text": "Review product performance, fulfillment efficiency, and team actions.",
+    "home.decisionEyebrow": "We deliver operating outcomes, not another isolated page",
+    "home.decisionTitle": "Move teams from repeated execution to systemized growth",
+    "home.decision1Title": "Launch faster",
+    "home.decision1Text": "Standardize product opportunities, asset rules, and Listing fields so teams spend less time searching, sorting, and re-entering data.",
+    "home.decision2Title": "Fulfill with more control",
+    "home.decision2Text": "Centralize orders, delivery, customer notices, and exception alerts into one rule set to reduce missed handling and last-minute fixes.",
+    "home.decision3Title": "Review with clarity",
+    "home.decision3Text": "Turn product performance, operating actions, and fulfillment results into dashboards so the team knows what to scale and what to fix.",
     "home.valueEyebrow": "Why Vector Leap",
-    "home.valueTitle": "Turn AI capability into visible business outcomes",
-    "home.value1Title": "Business-first scenarios",
-    "home.value1": "We design around real workflows, from customer inquiries and content processing to knowledge asset structuring.",
-    "home.value2Title": "Fast deployment",
-    "home.value2": "The first phase focuses on launchable, demonstrable, and iterative value.",
-    "home.value3Title": "Continuous productization",
-    "home.value3": "Standardized products support custom needs while reducing maintenance and expansion cost.",
+    "home.valueTitle": "Etsy is the core scenario, but the system extends to complete cross-border operations",
+    "home.value1Title": "Complete operating loop",
+    "home.value1": "Product research, content, publishing, orders, service, fulfillment, reviews, and dashboards are connected in one workflow.",
+    "home.value2Title": "Controlled automation",
+    "home.value2": "AI content, publishing, and fulfillment can start semi-automated with human review, then become more automated after the workflow stabilizes.",
+    "home.value3Title": "Team-ready expansion",
+    "home.value3": "The system leaves room for multiple stores, roles, product fields, asset libraries, service records, and operations dashboards.",
     "home.processEyebrow": "Implementation Process",
-    "home.processTitle": "Start with business diagnosis, then connect AI to real workflows",
-    "home.process1Title": "Business Diagnosis",
-    "home.process1Text": "Review customer sources, sales workflows, content operations, and knowledge materials to choose the best first scenario.",
-    "home.process2Title": "Solution Scope",
-    "home.process2Text": "Clarify product boundaries, first-version features, required materials, and delivery rhythm so investment and expectations are clear.",
-    "home.process3Title": "Launch Demo",
-    "home.process3Text": "Deliver a usable and demonstrable version first, so owners and teams can judge value quickly.",
-    "home.process4Title": "Optimization",
-    "home.process4Text": "Improve scripts, knowledge, materials, and workflows based on real inquiries, content feedback, and sales scenarios.",
+    "home.processTitle": "Start with one store loop, then build a cross-border commerce operating hub",
+    "home.process1Title": "Opportunity Collection",
+    "home.process1Text": "Confirm categories, keywords, public or authorized sources, collection boundaries, and platform rules to build the first opportunity pool.",
+    "home.process2Title": "Product Production",
+    "home.process2Text": "Generate images, titles, tags, descriptions, and attributes from product direction, then review, revise, and archive assets.",
+    "home.process3Title": "Publishing Operations",
+    "home.process3Text": "Move approved product data into publishing tasks by store, category, rhythm, and operating strategy.",
+    "home.process4Title": "Fulfillment Review",
+    "home.process4Text": "Trigger fulfillment, digital delivery, customer notices, and exception alerts, then review orders, reviews, and team actions.",
     "home.faqEyebrow": "FAQ",
-    "home.faqTitle": "Answers to the questions customers usually hesitate on",
-    "home.faq1Question": "Do we need to prepare a lot of materials for version one?",
-    "home.faq1Answer": "No. Product introductions, common customer questions, sales scripts, product data, or video materials are enough to start. We organize them into usable knowledge and workflow structures.",
-    "home.faq2Question": "How soon can we see a demo version?",
-    "home.faq2Answer": "The first phase focuses on a version that can be shown, discussed, and validated. The exact timeline depends on material readiness and scenario complexity.",
-    "home.faq3Question": "What if we do not know which product to start with?",
-    "home.faq3Answer": "Start with the problem that affects conversion or efficiency most: overseas operations for e-commerce growth, inquiries and quotes for the service assistant, reusable content for Inspiration Ark, and scattered scripts for the AI lexicon.",
+    "home.faqTitle": "Answers to key questions from cross-border teams",
+    "home.faq1Question": "What should we prepare for version one?",
+    "home.faq1Answer": "Start with target categories, product direction, image style, fulfillment method, current store workflow, and available data sources. We can begin with one category or a small product batch.",
+    "home.faq2Question": "Is scraping and data collection risky?",
+    "home.faq2Answer": "We prioritize public data, authorized data, and platform-allowed interfaces or pages. We avoid collection methods that break platform rules or infringe third-party rights.",
+    "home.faq3Question": "Can the system become fully automated?",
+    "home.faq3Answer": "It can move toward full automation step by step. Version one usually starts semi-automated: collection, content, publishing, fulfillment, and service tasks are generated by the system, while key decisions stay under human review.",
     "home.faq4Question": "Can it keep expanding later?",
-    "home.faq4Answer": "Yes. The first version is built to iterate, with room for more knowledge bases, customer entry points, video assets, quotation rules, and business modules.",
-    "home.finalCtaTitle": "Want to connect Vector Leap with your business?",
-    "home.finalCtaText": "Share your needs and we will recommend the right product path for your industry, customer journey, and workflow.",
+    "home.faq4Answer": "Yes. The system leaves room for product fields, role permissions, store data, asset libraries, service records, fulfillment rules, and operations dashboards.",
+    "home.finalCtaTitle": "Build a repeatable operating foundation for cross-border stores",
+    "home.finalCtaText": "Share your platform, category, store stage, fulfillment method, and the area you most want to automate. We will suggest whether to start from opportunity collection, product content, publishing, fulfillment, or customer operations.",
     "home.finalCtaButton": "Submit Inquiry",
     "home.officialEyebrow": "Official Info",
     "home.officialTitle": "Vector Leap official channels and business contact",
@@ -294,112 +372,114 @@ const dictionary = {
     "home.officialName": "Vector Leap / 向量跃迁",
     "home.officialDomainTitle": "Official Domain",
     "home.officialContactTitle": "Business Contact",
-    "products.pageTitle": "Bring products and services into real business workflows",
-    "products.pageIntro": "Build an implementable product and service matrix around overseas operations, customer inquiries, quotation conversion, content asset management, and enterprise knowledge structuring.",
+    "products.pageTitle": "A cross-border commerce operating system, deeply adapted for Etsy",
+    "products.pageIntro": "We split Etsy operations into opportunity discovery, product content, publishing optimization, order fulfillment, customer reviews, and business review, helping teams move from one store to repeatable multi-store operations.",
     "products.fitEyebrow": "Where to Start",
-    "products.fitTitle": "Start with the point that most affects growth efficiency",
-    "products.fitServiceTitle": "Inquiries and quotes are slow",
-    "products.fitServiceText": "If your website, ads, WeChat, or private channels already bring inquiries but replies, quoting, and lead tracking are still manual, start with the AI service and quotation assistant.",
-    "products.fitMediaTitle": "Video content processing is scattered",
-    "products.fitMediaText": "If short videos, live clips, and platform materials are hard to download, transcribe, summarize, analyze, and archive, start with Inspiration Ark.",
-    "products.fitLexiconTitle": "Scripts and materials are inconsistent",
-    "products.fitLexiconText": "If service replies, knowledge bases, product data, and quotation rules live in different hands, start with the AI lexicon knowledge base.",
-    "products.fitCommerceTitle": "Overseas growth lacks a closed loop",
-    "products.fitCommerceText": "If you have products, supply chain, or content capability but lack product validation, storefront setup, content acquisition, and service workflows, start with overseas e-commerce growth.",
-    "products.service.name": "AI Service & Quotation Assistant",
-    "products.service.desc": "An intelligent service system for business inquiries, pre-sales reception, product quotation, and after-sales response.",
-    "products.service.point1": "Automated inquiry reception",
-    "products.service.point2": "High-value lead capture",
-    "products.service.point3": "Automated quotation sheets",
-    "products.service.long": "Designed for companies that need better inquiry response, service scripts, product quoting, and after-sales efficiency. It generates professional replies from a knowledge base and creates Excel/PDF quotations from product data.",
-    "products.service.audience": "Business owners, sales teams, service teams, investment and pre-sales teams.",
-    "products.service.capability": "Intent recognition, script generation, quotation generation, knowledge base management, and multi-style replies.",
-    "products.service.value": "Reduce repeated communication and manual quoting, turning inquiries into standard replies, quotation sheets, and followable leads.",
-    "products.media.name": "Inspiration Ark",
-    "products.media.desc": "A content operations workspace for short video collection, transcription, summaries, copy analysis, and content library management.",
-    "products.media.point1": "Video download and transcription",
-    "products.media.point2": "Video summaries and copy analysis",
-    "products.media.point3": "Content library and account tracking",
-    "products.media.long": "Built for teams that use short videos, live clips, platform materials, and content reuse to drive growth. It turns material collection, transcription, content analysis, account tracking, and teamwork into a stable workflow.",
-    "products.media.audience": "Business owners, marketing teams, media operators, and acquisition teams.",
-    "products.media.capability": "Video download, transcription, content summaries, copy analysis, account tracking, content library, and team collaboration.",
-    "products.media.value": "Reduce material organization and review cost, helping teams build reusable topics, scripts, and video assets.",
-    "products.lexicon.name": "AI Lexicon Knowledge Base",
-    "products.lexicon.desc": "Turn scripts, knowledge, product data, and quotation rules into reusable enterprise knowledge assets.",
-    "products.lexicon.point1": "Standard script repository",
-    "products.lexicon.point2": "Unified knowledge management",
-    "products.lexicon.point3": "Reusable product and quotation rules",
-    "products.lexicon.long": "Built for service, sales, and operations teams. It centralizes standard scripts, knowledge bases, product libraries, quotation rules, and prompt templates so AI replies and quotes share the same business source.",
-    "products.lexicon.audience": "Service teams, sales teams, operations teams, and companies that need unified business materials.",
-    "products.lexicon.capability": "Knowledge import/export, keywords and standard answers, product library management, prompt templates, and extension modules.",
-    "products.lexicon.value": "Move experience from individuals into a system, improving reply consistency, quote accuracy, and team scalability.",
-    "products.commerce.name": "Overseas E-commerce Growth",
-    "products.commerce.desc": "A growth service for overseas markets covering product selection, storefronts, independent sites, content acquisition, customer service, and data review.",
-    "products.commerce.point1": "Product selection and market validation",
-    "products.commerce.point2": "Storefront and independent site operations",
-    "products.commerce.point3": "Content acquisition and data review",
-    "products.commerce.long": "Built for companies preparing to enter overseas markets, or teams with supply chain, brand, and content capability but no operating loop yet. We start with target markets, product validation, store or independent site setup, content entry points, customer service, and data review so overseas e-commerce becomes a repeatable operation.",
-    "products.commerce.audience": "Business owners, brands, supply chain teams, content teams, and operations teams planning overseas business.",
-    "products.commerce.capability": "Overseas market research, product validation, storefront or independent site setup, content acquisition, customer service, order data, and review workflows.",
-    "products.commerce.value": "Help teams judge categories, channels, and launch rhythm more clearly, reduce blind trial cost, and build a global growth loop.",
+    "products.fitTitle": "Start from the operating step that blocks the store most",
+    "products.fitServiceTitle": "Images and product assets need batch generation",
+    "products.fitServiceText": "If images, titles, tags, descriptions, and Listing assets slow down new products, start with AI product content production.",
+    "products.fitMediaTitle": "You need steady product discovery and batch publishing",
+    "products.fitMediaText": "If public product, keyword, pricing, and trend references need to become Listing drafts and publishing tasks, start with product research and publishing automation.",
+    "products.fitLexiconTitle": "Orders, service, reviews, and fulfillment depend on manual checking",
+    "products.fitLexiconText": "If orders, digital files, logistics tasks, customer notices, after-sales, and review maintenance are scattered, start with fulfillment and store operations.",
+    "products.fitCommerceTitle": "You want to systemize the whole store operation",
+    "products.fitCommerceText": "If opportunity collection, product production, publishing, fulfillment, customer operations, and review should run in one system, start with the cross-border commerce operating system.",
+    "products.service.name": "AI Product Content Production",
+    "products.service.desc": "Generate product images, lifestyle scenes, variations, titles, tags, descriptions, and Listing assets from product direction, keywords, and style templates.",
+    "products.service.point1": "Product image generation",
+    "products.service.point2": "Listing copy production",
+    "products.service.point3": "Asset review archive",
+    "products.service.long": "Designed for teams whose image and copy capacity cannot keep up with product volume. The system generates content from keywords, styles, visual templates, sizing rules, and Listing fields while keeping human review, replacement, and version management.",
+    "products.service.audience": "New Etsy stores, digital product sellers, POD teams, cross-border operators, and teams responsible for product content and publishing rhythm.",
+    "products.service.capability": "AI images, lifestyle scenes, variation images, title/tag/description drafts, asset templates, batch export, human review, and version archive.",
+    "products.service.value": "Reduce repeated image editing and copywriting so teams can test more products, categories, and store strategies with a stable production workflow.",
+    "products.media.name": "Product Research and Publishing Automation",
+    "products.media.desc": "Collect product, keyword, pricing, trend, and competitor references from public or authorized data, then generate Listing drafts, publishing tasks, and launch rhythm.",
+    "products.media.point1": "Opportunity data collection",
+    "products.media.point2": "Keyword and price references",
+    "products.media.point3": "Batch publishing tasks",
+    "products.media.long": "Built for teams that need continuous product research, competitor observation, new product testing, and batch publishing. The system collects within public-page, authorized-data, and interface rules, then organizes keywords, price ranges, category references, visual direction, and Listing fields for publishing workflows.",
+    "products.media.audience": "Etsy product research teams, cross-border operators, store owners, brands, and multi-store teams.",
+    "products.media.capability": "Public data collection, keyword capture, pricing references, competitor records, opportunity pool, Listing drafts, publishing tasks, and exception alerts.",
+    "products.media.value": "Turn product research and publishing from manual search and copy-paste into a trackable workflow.",
+    "products.lexicon.name": "Fulfillment and Store Operations",
+    "products.lexicon.desc": "After purchase, match product type, digital files, logistics rules, customer notifications, service follow-up, and review maintenance to trigger operating tasks and track status.",
+    "products.lexicon.point1": "Order routing",
+    "products.lexicon.point2": "Fulfillment rules",
+    "products.lexicon.point3": "Service and review follow-up",
+    "products.lexicon.long": "For teams under order, fulfillment, service, and review pressure. The system centralizes order recognition, digital delivery, logistics tasks, customer notifications, after-sales records, review follow-up, and exception handling so every post-order action has a status and review trail.",
+    "products.lexicon.audience": "Etsy store owners, support teams, digital product sellers, multi-store operators, and cross-border teams coordinating fulfillment.",
+    "products.lexicon.capability": "Order sync, product-type matching, digital file delivery, logistics task flow, customer message records, review maintenance, fulfillment status, exception alerts, and dashboards.",
+    "products.lexicon.value": "Reduce missed fulfillment, wrong delivery, delayed follow-up, and service omissions by turning post-order work into a stable automated workflow.",
+    "products.fulfillmentVisualTitle": "Turn post-order work from ad hoc handling into a stable flow",
+    "products.fulfillmentVisualText": "Orders, files, logistics, customer service, and exception alerts enter one workspace so the team can track every delivery state.",
+    "products.commerce.name": "Cross-border Commerce Operating System",
+    "products.commerce.desc": "An integrated operating hub for Etsy and cross-border teams, covering product research, AI content, batch publishing, order fulfillment, customer reviews, and performance review.",
+    "products.commerce.point1": "Opportunity collection",
+    "products.commerce.point2": "Content + launches",
+    "products.commerce.point3": "Fulfillment/service/review",
+    "products.commerce.long": "Built for teams preparing to operate Etsy systematically or existing sellers with scattered workflows. It connects compliant public-data collection, product opportunity pools, AI product content, Listing generation, publishing tasks, order processing, automated fulfillment, customer reviews, and operations review into a repeatable operating system.",
+    "products.commerce.audience": "Etsy sellers, cross-border commerce teams, supply chain teams, brands, multi-store operators, and founders who want repeatable store operations.",
+    "products.commerce.capability": "Data collection, product database, asset library, AI images, Listing generation, publishing tasks, order processing, automated fulfillment, customer follow-up, review maintenance, team dashboards, and operations review.",
+    "products.commerce.value": "Reduce repeated product research, content, listing, fulfillment, and customer-service work so cross-border stores can move from manual operations to system operations.",
     "products.deliveryEyebrow": "Delivery Model",
-    "products.deliveryTitle": "Launch a first version that proves the workflow, then deepen it",
-    "products.delivery1Title": "Material Structuring",
-    "products.delivery1Text": "Organize product materials, FAQs, sales scripts, video assets, product rules, and overseas market information into usable structures.",
-    "products.delivery2Title": "First Launch",
-    "products.delivery2Text": "Launch around one clear business entry point, prioritizing usability, presentation, and iteration.",
-    "products.delivery3Title": "Review and Improve",
-    "products.delivery3Text": "Use real customer questions, team feedback, order data, and business priorities to improve knowledge, scripts, content workflows, and global launch rhythm.",
-    "solutions.title": "Implementation plans by business problem",
-    "solutions.intro": "Solutions are not simple product introductions. We start from the specific business problem, then decide which capability to connect first, how to implement it, and how to create results.",
+    "products.deliveryTitle": "Run one store operating loop first, then expand to multi-store operations",
+    "products.delivery1Title": "Operating Diagnosis",
+    "products.delivery1Text": "Map platform, category, product source, data boundary, launch rhythm, fulfillment method, service flow, and team roles to decide the first automation loop.",
+    "products.delivery2Title": "Operating Hub Build",
+    "products.delivery2Text": "Launch the first workspace around product data, asset library, Listing fields, review flows, publishing tasks, order rules, and team permissions.",
+    "products.delivery3Title": "Automation Deepening",
+    "products.delivery3Text": "Use product performance, fulfillment data, service exceptions, and team efficiency to deepen rules and scale the system beyond the first loop.",
+    "solutions.title": "Automation plans around the cross-border store operating loop",
+    "solutions.intro": "We start from real Etsy and cross-border store workflows, then decide whether to automate opportunity collection, product content, batch publishing, fulfillment, customer reviews, or business review first.",
     "solutions.problemLabel": "Typical Problem",
     "solutions.solutionLabel": "How We Solve It",
     "solutions.relatedProduct": "Related Product",
-    "solutions.sales.tag": "Too many inquiries, slow follow-up, lost leads",
-    "solutions.sales.title": "Customer Inquiry and Sales Conversion",
-    "solutions.sales.problem": "When customers contact you from the website, WeChat, ads, or private channels, sales teams often respond late, repeat the same answers, and miss high-intent leads.",
-    "solutions.sales.point1": "Use the AI service and quotation assistant to handle common questions and keep basic response online.",
-    "solutions.sales.point2": "Identify purchase intent, budget, industry, and product needs from conversations.",
-    "solutions.sales.point3": "Turn valid inquiries into followable lead records for sales teams.",
-    "solutions.content.tag": "Hard to publish consistently, low operation efficiency",
-    "solutions.content.title": "Content Asset Management and Account Growth",
-    "solutions.content.problem": "Companies want to acquire customers through short videos, live clips, and private-channel content, but downloading, transcribing, summarizing, analyzing, and managing materials are often scattered.",
-    "solutions.content.point1": "Support video downloads, transcription, and summaries so external materials become reviewable content quickly.",
-    "solutions.content.point2": "Analyze high-performing copy, account content, and script structures to reduce creation friction.",
-    "solutions.content.point3": "Manage content libraries, account tracking, and team collaboration so content becomes a repeatable workflow.",
-    "solutions.knowledge.tag": "Scattered scripts, reusable knowledge, slow team replication",
-    "solutions.knowledge.title": "AI Lexicon and Knowledge Asset Plan",
-    "solutions.knowledge.problem": "Service replies, sales scripts, product data, and quotation rules are often scattered across spreadsheets, documents, and personal experience, making AI replies and team onboarding inconsistent.",
-    "solutions.knowledge.point1": "Organize FAQs, standard answers, product libraries, and quotation rules into one knowledge structure.",
-    "solutions.knowledge.point2": "Use prompt templates and extension modules to guide reply style, quote logic, and business boundaries.",
-    "solutions.knowledge.point3": "Let service, sales, and operations teams share the same knowledge assets, reducing repeated training and manual corrections.",
-    "solutions.commerce.tag": "Planning overseas markets, but lacking a loop from product selection to conversion",
-    "solutions.commerce.title": "Overseas E-commerce Growth Plan",
-    "solutions.commerce.problem": "Companies may have products, supply chain, or content capability, but overseas market judgment, platform rules, content launch, customer service, and review workflows are scattered and stay at the testing stage.",
-    "solutions.commerce.point1": "Validate product selection and demand around the target market and product strengths.",
-    "solutions.commerce.point2": "Set up storefronts or independent sites, content entry points, and customer service workflows.",
-    "solutions.commerce.point3": "Use sales data, inquiry feedback, and content performance to review categories, pricing, and launch rhythm.",
-    "solutions.ctaEyebrow": "Not sure where to start?",
-    "solutions.ctaTitle": "Start with the problem that most affects conversion and efficiency",
-    "solutions.ctaText": "Tell us about your customer sources, sales workflow, content operations, or knowledge materials. Vector Leap will help you choose the first implementation path.",
-    "about.title": "Bring AI from concept into business operations",
-    "about.intro": "Vector Leap focuses on productized AI implementation, helping companies turn customer service, content growth, and knowledge assets into reusable digital capabilities.",
+    "solutions.sales.tag": "Need steady product discovery, competitor signals, and market opportunities",
+    "solutions.sales.title": "Opportunity Collection and Product Insight Plan",
+    "solutions.sales.problem": "Product research, keywords, pricing, competitors, and trend references rely on manual search and copy-paste, making the process slow and hard to review.",
+    "solutions.sales.point1": "Collect public or authorized data by category, keyword, and rules.",
+    "solutions.sales.point2": "Keep pricing ranges, visual styles, title keywords, review signals, and product directions.",
+    "solutions.sales.point3": "Move collection results into the product opportunity pool, content production, and Listing pipeline.",
+    "solutions.content.tag": "Product content and launch rhythm need scale",
+    "solutions.content.title": "AI Product Content and Batch Launch Plan",
+    "solutions.content.problem": "Images, lifestyle scenes, titles, tags, descriptions, and attributes require repeated manual work, slowing down product testing and publishing.",
+    "solutions.content.point1": "Generate product images, lifestyle scenes, variations, and asset versions from product direction and style templates.",
+    "solutions.content.point2": "Generate titles, tags, descriptions, and attribute drafts with human review.",
+    "solutions.content.point3": "Connect images, copy, fields, and version records to the same product for batch publishing.",
+    "solutions.knowledge.tag": "Fulfillment, service, reviews, and exceptions are scattered after orders",
+    "solutions.knowledge.title": "Fulfillment, Service, and Store Operations Plan",
+    "solutions.knowledge.problem": "After purchase, teams manually identify product type, send files, create logistics tasks, notify customers, handle after-sales, and maintain reviews, which can cause missed or delayed work.",
+    "solutions.knowledge.point1": "Match digital files, logistics rules, service scripts, or processing tasks by product type.",
+    "solutions.knowledge.point2": "Trigger fulfillment, delivery, customer notices, exception alerts, and review follow-up automatically.",
+    "solutions.knowledge.point3": "Review fulfillment efficiency, exceptions, review feedback, and product performance from one dashboard.",
+    "solutions.commerce.tag": "Want to make the store a repeatable operating system",
+    "solutions.commerce.title": "Cross-border Store Automation Operating Plan",
+    "solutions.commerce.problem": "Opportunity collection, image creation, Listing writing, publishing, orders, fulfillment, customer service, and review are scattered across tools and manual workflows, limiting scale.",
+    "solutions.commerce.point1": "Run public-data collection, AI product content, and Listing generation first.",
+    "solutions.commerce.point2": "Connect publishing tasks, order recognition, fulfillment, customer follow-up, and review maintenance rules.",
+    "solutions.commerce.point3": "Trial with real products, then expand categories, stores, role permissions, and team dashboards.",
+    "solutions.ctaEyebrow": "Not sure which module to start with?",
+    "solutions.ctaTitle": "Start with the operating step you most want to automate",
+    "solutions.ctaText": "Tell us whether you are stuck at product research, content, publishing, orders, fulfillment, service, or review. Vector Leap will suggest the best first loop.",
+    "about.title": "Focused on cross-border commerce operating automation",
+    "about.intro": "Vector Leap uses Etsy as a core landing scenario, helping cross-border teams turn opportunity collection, AI product content, Listing publishing, order fulfillment, customer reviews, and business review into stable operating systems.",
     "about.missionTitle": "Our Direction",
-    "about.mission1Title": "Productized",
-    "about.mission1": "Use stable products to support business needs and reduce one-off project maintenance pressure.",
-    "about.mission2Title": "Scenario-driven",
-    "about.mission2": "Understand business problems first, then design where AI should intervene.",
-    "about.mission3Title": "Growth-ready",
-    "about.mission3": "Each launch should accumulate data, process knowledge, and conversion experience.",
-    "contact.title": "Book a growth consultation focused on business outcomes",
-    "contact.intro": "Tell us your industry, products, and customer sources. We will recommend the best product or service to start with.",
+    "about.mission1Title": "Focused on commerce operations",
+    "about.mission1": "We are not positioning ourselves as a single plugin or small tool; we build around the real operating path of cross-border stores.",
+    "about.mission2Title": "Workflow-first",
+    "about.mission2": "We understand data sources, content rules, publishing rules, fulfillment methods, service steps, and team collaboration before designing automation.",
+    "about.mission3Title": "Long-term Iteration",
+    "about.mission3": "The system can expand with categories, platforms, store stage, team size, service flows, and fulfillment rules.",
+    "contact.title": "Book a Cross-border Store Operations Review",
+    "contact.intro": "Tell us your platform, category, store count, fulfillment method, and the operating step you most want to automate. We will suggest the best first loop.",
     "contact.name": "Name",
     "contact.company": "Company / Individual (optional)",
     "contact.contact": "Phone / WeChat",
     "contact.email": "Email",
-    "contact.product": "Interested Business",
+    "contact.product": "Current Stage / Capability",
     "contact.productPlaceholder": "Select one",
-    "contact.allProducts": "General Inquiry",
+    "contact.allProducts": "Not sure yet, general inquiry",
     "contact.message": "Requirements",
     "contact.submit": "Submit Inquiry",
     "contact.directTitle": "Business Contact",
@@ -407,31 +487,23 @@ const dictionary = {
     "contact.wechat": "WeChat",
     "contact.mail": "Email",
     "contact.phone": "Phone",
-    "careers.title": "Join Us",
-    "careers.text": "Vector Leap is looking for people interested in AI products, enterprise services, and industry digitalization. If you care about product, engineering, sales, or content growth, contact us via WeChat or email.",
-    "careers.cta": "Contact to Join",
     "footer.companyTitle": "Shenzhen Vector Leap Technology Co., Ltd.",
-    "footer.companyDesc": "Vector Leap provides implementable business services and AI products around growth and efficiency, helping teams turn customers, content, and knowledge into reusable operating capabilities.",
+    "footer.companyDesc": "Focused on cross-border commerce operating automation, helping teams turn opportunity collection, AI product content, publishing, orders, fulfillment, service, and review into stable workflows.",
     "footer.company": "Company",
     "footer.business": "Core Business",
-    "footer.solutions": "Solutions",
     "footer.contact": "Business Contact",
     "footer.about": "About",
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Service",
-    "footer.commerce": "Overseas E-commerce Growth",
-    "footer.aiService": "AI Service Assistant",
-    "footer.media": "Inspiration Ark",
-    "footer.lexicon": "AI Lexicon Knowledge Base",
-    "footer.solutionCommerce": "Overseas E-commerce Growth",
-    "footer.solutionSales": "Customer Inquiry Conversion",
-    "footer.solutionContent": "Content Asset Management",
-    "footer.solutionKnowledge": "Knowledge Asset Structuring",
+    "footer.commerce": "Commerce Operating System",
+    "footer.aiService": "AI Product Content",
+    "footer.media": "Research and Publishing",
+    "footer.lexicon": "Fulfillment and Service",
     "footer.email": "Email: wang2797545062@gmail.com",
     "footer.phone": "Phone: +86 188 1448 5834",
     "footer.wechat": "WeChat: kaze005",
     "footer.address": "Address: Shenzhen, Guangdong, China",
-    "footer.icp": "ICP filing: pending",
+    "footer.icp": "ICP: 粤ICP备2026052555号",
     "footer.police": "Public security filing: pending",
     "common.learnMore": "Learn More",
     "common.audience": "Audience",
@@ -439,7 +511,7 @@ const dictionary = {
     "common.value": "Business Value",
     "common.book": "Book Consultation",
     "footer.copy": "© 2026 Shenzhen Vector Leap Technology Co., Ltd. All rights reserved.",
-    "footer.note": "Official domain vectorleap.xyz · Business growth and AI products.",
+    "footer.note": "Official domain vectorleap.xyz · Cross-border commerce operating system.",
     "legal.privacyEyebrow": "Privacy Policy",
     "legal.privacyTitle": "Vector Leap Website Privacy Policy",
     "legal.privacyIntro": "This policy explains how Shenzhen Vector Leap Technology Co., Ltd. handles information you provide during website inquiries, browsing, and business communication.",
@@ -500,7 +572,7 @@ function footerTemplate() {
           <span data-i18n="brand">向量跃迁</span>
         </a>
         <strong data-i18n="footer.companyTitle">深圳向量跃迁科技有限公司</strong>
-        <p data-i18n="footer.companyDesc">围绕企业增长与效率提升，提供可落地的业务服务与 AI 产品，帮助团队把客户、内容和知识转化为可复用的经营能力。</p>
+        <p data-i18n="footer.companyDesc">专注跨境电商自动化经营系统，帮助团队把机会采集、AI 商品内容、刊登、订单、发货、客服和复盘变成稳定运营流程。</p>
       </div>
       <nav class="footer-col" aria-label="公司">
         <strong data-i18n="footer.company">公司</strong>
@@ -511,17 +583,10 @@ function footerTemplate() {
       </nav>
       <nav class="footer-col" aria-label="主营业务">
         <strong data-i18n="footer.business">主营业务</strong>
-        <a href="/products#overseas-commerce" data-i18n="footer.commerce">海外电商增长项目</a>
-        <a href="/products#ai-service" data-i18n="footer.aiService">AI客服报价助手</a>
-        <a href="/products#media-platform" data-i18n="footer.media">灵感方舟</a>
-        <a href="/products#ai-lexicon" data-i18n="footer.lexicon">AI词库知识库</a>
-      </nav>
-      <nav class="footer-col" aria-label="解决方案">
-        <strong data-i18n="footer.solutions">解决方案</strong>
-        <a href="/solutions" data-i18n="footer.solutionCommerce">海外电商出海增长</a>
-        <a href="/solutions" data-i18n="footer.solutionSales">客户咨询与销售转化</a>
-        <a href="/solutions" data-i18n="footer.solutionContent">内容素材管理</a>
-        <a href="/solutions" data-i18n="footer.solutionKnowledge">知识资产沉淀</a>
+        <a href="/products#etsy-system" data-i18n="footer.commerce">跨境电商智能经营系统</a>
+        <a href="/products#ai-image-generation" data-i18n="footer.aiService">AI 商品内容生产</a>
+        <a href="/products#collection-publishing" data-i18n="footer.media">选品采集与刊登</a>
+        <a href="/products#auto-fulfillment" data-i18n="footer.lexicon">履约客服自动化</a>
       </nav>
       <div class="footer-col footer-contact">
         <strong data-i18n="footer.contact">商务联系</strong>
@@ -533,8 +598,8 @@ function footerTemplate() {
     </div>
     <div class="footer-bottom">
       <span data-i18n="footer.copy">© 2026 深圳向量跃迁科技有限公司. All rights reserved.</span>
-      <span data-i18n="footer.note">官方网站 vectorleap.xyz · 企业增长与 AI 产品服务.</span>
-      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" data-i18n="footer.icp">ICP备案号：待备案</a>
+      <span data-i18n="footer.note">官方网站 vectorleap.xyz · 跨境电商智能经营系统.</span>
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" data-i18n="footer.icp">粤ICP备2026052555号</a>
       <a href="https://www.beian.gov.cn/" target="_blank" rel="noopener" data-i18n="footer.police">公安备案号：待办理</a>
     </div>
   `;
@@ -585,19 +650,24 @@ function initNavigation() {
     }
   });
 
-  toggle.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", String(isOpen));
-  });
+  if (!toggle.dataset.navBound) {
+    toggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+    toggle.dataset.navBound = "true";
+  }
 }
 
 function initLanguageToggle() {
   document.querySelectorAll("[data-lang-toggle]").forEach((button) => {
+    if (button.dataset.langBound) return;
     button.addEventListener("click", () => {
       const nextLanguage = getLanguage() === "en" ? "zh" : "en";
       localStorage.setItem("site-language", nextLanguage);
       applyLanguage(nextLanguage);
     });
+    button.dataset.langBound = "true";
   });
 }
 
@@ -606,12 +676,18 @@ function initContactForm() {
   if (!form) return;
 
   const status = document.querySelector("[data-form-status]");
+  const submitButton = form.querySelector('button[type="submit"]');
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const language = getLanguage();
     const strings = dictionary[language] || dictionary.zh;
     status.textContent = strings["form.sending"];
     status.className = "form-status";
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.classList.add("is-loading");
+      submitButton.setAttribute("aria-busy", "true");
+    }
 
     const payload = Object.fromEntries(new FormData(form).entries());
     payload.language = language;
@@ -630,8 +706,198 @@ function initContactForm() {
     } catch (error) {
       status.textContent = strings["form.error"];
       status.classList.add("error");
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.classList.remove("is-loading");
+        submitButton.removeAttribute("aria-busy");
+      }
     }
   });
+}
+
+const fastPagePaths = new Set(["/", "/products", "/solutions", "/about", "/contact", "/privacy", "/terms"]);
+const pageCache = new Map();
+const coreImageAssets = [
+  "/assets/hero-commerce-poster.webp",
+  "/assets/cover-commerce-system-v2.webp",
+  "/assets/cover-ai-content-v2.webp",
+  "/assets/cover-research-publish-v2.webp",
+  "/assets/cover-fulfillment-v2.webp",
+  "/assets/global-network-visual.webp",
+  "/assets/fulfillment-route-visual.webp",
+  "/assets/fulfillment-operations-visual-v2-optimized.jpg"
+];
+
+function normalizePagePath(pathname) {
+  if (pathname === "/index.html") return "/";
+  return pathname.endsWith(".html") ? pathname.slice(0, -5) : pathname;
+}
+
+function getFastPageUrl(href) {
+  const url = new URL(href, window.location.origin);
+  if (url.origin !== window.location.origin) return null;
+  const path = normalizePagePath(url.pathname);
+  if (!fastPagePaths.has(path)) return null;
+  url.pathname = path === "/" ? "/" : path;
+  return url;
+}
+
+async function fetchFastPage(url) {
+  const cacheKey = `${url.pathname}${url.search}`;
+  if (pageCache.has(cacheKey)) return pageCache.get(cacheKey);
+
+  const request = fetch(cacheKey || "/", {
+    headers: { "X-Requested-With": "VectorLeap-FastNav" }
+  }).then(async (response) => {
+    if (!response.ok) throw new Error(`Page request failed: ${response.status}`);
+    const html = await response.text();
+    return new DOMParser().parseFromString(html, "text/html");
+  });
+
+  pageCache.set(cacheKey, request);
+  return request;
+}
+
+function syncHeadFromDocument(nextDocument) {
+  document.title = nextDocument.title || document.title;
+
+  const nextDescription = nextDocument.querySelector('meta[name="description"]');
+  const currentDescription = document.querySelector('meta[name="description"]');
+  if (nextDescription && currentDescription) {
+    currentDescription.setAttribute("content", nextDescription.getAttribute("content") || "");
+  }
+
+  const nextCanonical = nextDocument.querySelector('link[rel="canonical"]');
+  const currentCanonical = document.querySelector('link[rel="canonical"]');
+  if (nextCanonical && currentCanonical) {
+    currentCanonical.setAttribute("href", nextCanonical.getAttribute("href") || "");
+  }
+}
+
+function scrollToFastPageTarget(url) {
+  requestAnimationFrame(() => {
+    if (url.hash) {
+      const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
+      if (target) {
+        target.scrollIntoView({ block: "start" });
+        return;
+      }
+    }
+    window.scrollTo({ top: 0, left: 0 });
+  });
+}
+
+function activateFastPage(nextDocument, url, shouldPushState) {
+  const currentMain = document.querySelector("main");
+  const nextMain = nextDocument.querySelector("main");
+  if (!currentMain || !nextMain) {
+    window.location.href = url.href;
+    return;
+  }
+
+  currentMain.replaceWith(nextMain);
+  syncHeadFromDocument(nextDocument);
+  document.body.className = nextDocument.body.className;
+
+  if (shouldPushState) {
+    history.pushState({ fastNavigation: true }, "", `${url.pathname}${url.search}${url.hash}`);
+  }
+
+  initShell();
+  initNavigation();
+  initLanguageToggle();
+  applyLanguage(getLanguage());
+  initContactForm();
+  initFastPagePrefetch();
+  scrollToFastPageTarget(url);
+}
+
+async function navigateFast(url, shouldPushState = true) {
+  document.documentElement.classList.add("is-page-loading");
+  try {
+    const nextDocument = await fetchFastPage(url);
+    activateFastPage(nextDocument, url, shouldPushState);
+  } catch (error) {
+    window.location.href = url.href;
+  } finally {
+    document.documentElement.classList.remove("is-page-loading");
+  }
+}
+
+function shouldHandleFastClick(event, link) {
+  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+    return false;
+  }
+  if (link.target && link.target !== "_self") return false;
+  if (link.hasAttribute("download")) return false;
+
+  const url = getFastPageUrl(link.getAttribute("href"));
+  if (!url) return false;
+
+  const currentPath = normalizePagePath(window.location.pathname);
+  if (url.pathname === currentPath && url.hash) return false;
+
+  link.dataset.fastHref = url.href;
+  return true;
+}
+
+function prefetchFastPage(link) {
+  const url = getFastPageUrl(link.getAttribute("href"));
+  if (!url) return;
+
+  const currentPath = normalizePagePath(window.location.pathname);
+  if (url.pathname === currentPath && !url.search) return;
+  fetchFastPage(url).catch(() => {});
+}
+
+function initFastPagePrefetch() {
+  document.querySelectorAll('a[href^="/"], a[href^="./"], a[href^="../"]').forEach((link) => {
+    if (link.dataset.prefetchBound) return;
+    link.addEventListener("pointerenter", () => prefetchFastPage(link), { passive: true });
+    link.addEventListener("focus", () => prefetchFastPage(link), { passive: true });
+    link.dataset.prefetchBound = "true";
+  });
+}
+
+function initFastNavigation() {
+  if (window.__vectorLeapFastNavigation) return;
+  window.__vectorLeapFastNavigation = true;
+
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest("a[href]");
+    if (!link || !shouldHandleFastClick(event, link)) return;
+
+    event.preventDefault();
+    const url = new URL(link.dataset.fastHref);
+    navigateFast(url);
+  });
+
+  window.addEventListener("popstate", () => {
+    const url = getFastPageUrl(window.location.href);
+    if (url) navigateFast(url, false);
+  });
+
+  initFastPagePrefetch();
+
+  const warmPages = () => ["/products", "/solutions", "/about", "/contact"].forEach((path) => {
+    fetchFastPage(new URL(path, window.location.origin)).catch(() => {});
+  });
+  const warmAssets = () => coreImageAssets.forEach((src) => {
+    const image = new Image();
+    image.decoding = "async";
+    image.src = src;
+  });
+  const warmSite = () => {
+    warmPages();
+    warmAssets();
+  };
+
+  if ("requestIdleCallback" in window) {
+    requestIdleCallback(warmSite, { timeout: 2500 });
+  } else {
+    window.setTimeout(warmSite, 1200);
+  }
 }
 
 initShell();
@@ -639,3 +905,4 @@ initNavigation();
 initLanguageToggle();
 applyLanguage(getLanguage());
 initContactForm();
+initFastNavigation();

@@ -18,10 +18,33 @@ const MIME_TYPES = {
   ".txt": "text/plain; charset=utf-8",
   ".svg": "image/svg+xml",
   ".png": "image/png",
+  ".webp": "image/webp",
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".ico": "image/x-icon"
 };
+
+const LONG_CACHE_EXTENSIONS = new Set([".avif", ".gif", ".ico", ".jpeg", ".jpg", ".png", ".svg", ".webp"]);
+const SHORT_CACHE_EXTENSIONS = new Set([".css", ".js", ".json", ".txt", ".xml"]);
+
+function getStaticHeaders(filePath, stats) {
+  const ext = path.extname(filePath);
+  const headers = {
+    "Content-Type": MIME_TYPES[ext] || "application/octet-stream",
+    "ETag": `W/"${stats.size}-${Number(stats.mtimeMs).toString(16)}"`,
+    "Last-Modified": stats.mtime.toUTCString()
+  };
+
+  if (ext === ".html") {
+    headers["Cache-Control"] = "no-cache";
+  } else if (LONG_CACHE_EXTENSIONS.has(ext)) {
+    headers["Cache-Control"] = "public, max-age=31536000, immutable";
+  } else if (SHORT_CACHE_EXTENSIONS.has(ext)) {
+    headers["Cache-Control"] = "no-cache";
+  }
+
+  return headers;
+}
 
 function loadEnvFile() {
   const envPath = path.join(__dirname, ".env");
@@ -229,8 +252,8 @@ function serveStatic(req, res) {
     return;
   }
 
-  fs.readFile(filePath, (error, data) => {
-    if (error) {
+  fs.stat(filePath, (statError, stats) => {
+    if (statError || !stats.isFile()) {
       fs.readFile(path.join(ROOT, "404.html"), (notFoundError, notFoundData) => {
         res.writeHead(404, { "Content-Type": MIME_TYPES[".html"] });
         res.end(notFoundError ? "Not found" : notFoundData);
@@ -238,9 +261,23 @@ function serveStatic(req, res) {
       return;
     }
 
-    const ext = path.extname(filePath);
-    res.writeHead(200, { "Content-Type": MIME_TYPES[ext] || "application/octet-stream" });
-    res.end(data);
+    const headers = getStaticHeaders(filePath, stats);
+    if (req.headers["if-none-match"] === headers.ETag) {
+      res.writeHead(304, headers);
+      res.end();
+      return;
+    }
+
+    fs.readFile(filePath, (error, data) => {
+      if (error) {
+        res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
+        res.end("Server error");
+        return;
+      }
+
+      res.writeHead(200, headers);
+      res.end(req.method === "HEAD" ? undefined : data);
+    });
   });
 }
 
